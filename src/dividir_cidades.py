@@ -141,9 +141,13 @@ def main():
 
     # 1. unidades (municipios inteiros ou fatias)
     unidades = []
+    corrigidas = []
     for f in feats:
         p = f["properties"]
-        geom = shape(f["geometry"])
+        bruta = shape(f["geometry"])
+        geom = so_poligonos(bruta)
+        if (not bruta.is_valid) or bruta.area <= 0:
+            corrigidas.append(f'{p["nome"]}/{p["uf"]}')
         donos = clubes_do_mun.get(p["codigo"], [])
         if len(donos) <= 1:
             unidades.append({"id": p["codigo"], "nome": p["nome"], "uf": p["uf"],
@@ -157,6 +161,11 @@ def main():
                                  "inicial": True})
     divididas = sum(1 for v in clubes_do_mun.values() if len(v) > 1)
     print(f"{len(unidades)} unidades ({divididas} cidades divididas entre varios clubes)")
+    print(f"Geometrias invalidas corrigidas: {len(corrigidas)}"
+          + (" (" + ", ".join(corrigidas[:12]) + ")" if corrigidas else ""))
+    ruins = [u["nome"] for u in unidades if not (u["geom"].area > 0)]
+    print(f"Unidades com area zero ou negativa apos correcao: {len(ruins)}"
+          + (" (" + ", ".join(ruins[:12]) + ")" if ruins else ""))
 
     # 2. fronteiras entre unidades
     print("Calculando fronteiras entre unidades...")
