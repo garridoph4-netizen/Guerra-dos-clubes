@@ -1,4 +1,8 @@
-"""Baixa os limites oficiais dos municipios (IBGE) e confere as cidades dos clubes.
+"""Baixa os limites dos municipios brasileiros (dados do IBGE em espelho no GitHub)
+e confere as cidades dos clubes.
+
+O servidor do IBGE bloqueia o GitHub Actions, entao usamos o espelho
+tbrugz/geodata-br (dominio publico, derivado das malhas do IBGE).
 
 Gera:
   data/municipios.geojson.gz  (todos os municipios, coordenadas com 5 casas)
@@ -14,10 +18,10 @@ import time
 import unicodedata
 import urllib.request
 
-URL_NOMES = "https://servicodados.ibge.gov.br/api/v1/localidades/municipios"
-URL_MALHA = ("https://servicodados.ibge.gov.br/api/v3/malhas/estados/{cod}"
-             "?intrarregiao=municipio&qualidade=intermediaria"
-             "&formato=application/vnd.geo+json")
+FONTES = [
+    "https://raw.githubusercontent.com/tbrugz/geodata-br/master/geojson/geojs-{cod}-mun.json",
+    "https://cdn.jsdelivr.net/gh/tbrugz/geodata-br@master/geojson/geojs-{cod}-mun.json",
+]
 
 UFS = {
     "11": "RO", "12": "AC", "13": "AM", "14": "RR", "15": "PA", "16": "AP",
@@ -32,16 +36,33 @@ SAIDA_CSV = os.path.join("data", "municipios.csv")
 ENTRADA_CLUBES = os.path.join("data", "clubes.csv")
 
 
-def baixar(url, tentativas=4):
+def baixar(url, tentativas=3):
     for i in range(tentativas):
         try:
             req = urllib.request.Request(url, headers={"User-Agent": "guerra-dos-clubes"})
-            with urllib.request.urlopen(req, timeout=180) as r:
+            with urllib.request.urlopen(req, timeout=120) as r:
                 return json.loads(r.read().decode("utf-8"))
         except Exception as erro:
             print(f"  tentativa {i + 1} falhou: {erro}")
-            time.sleep(5 * (i + 1))
-    raise SystemExit(f"Nao consegui baixar: {url}")
+            time.sleep(3 * (i + 1))
+    return None
+
+
+def baixar_estado(cod):
+    for modelo in FONTES:
+        url = modelo.format(cod=cod)
+        print(f"  tentando {url}")
+        dados = baixar(url)
+        if dados and dados.get("features"):
+            return dados
+    raise SystemExit(f"Nao consegui baixar o estado {cod}")
+
+
+def pegar(props, chaves):
+    for c in chaves:
+        if c in props and props[c] not in (None, ""):
+            return str(props[c])
+    return None
 
 
 def arredondar(coords):
@@ -59,22 +80,21 @@ def normalizar(texto):
 def main():
     os.makedirs("data", exist_ok=True)
 
-    print("Baixando nomes dos municipios...")
-    nomes = {str(m["id"]): m["nome"] for m in baixar(URL_NOMES)}
-    print(f"  {len(nomes)} nomes recebidos")
-
     features = []
     for cod, uf in UFS.items():
         print(f"Baixando malha de {uf}...")
-        dados = baixar(URL_MALHA.format(cod=cod))
+        dados = baixar_estado(cod)
         for f in dados["features"]:
-            codigo = str(f["properties"]["codarea"])
+            props = f.get("properties", {})
+            codigo = pegar(props, ["id", "codarea", "cd_geocmu", "CD_MUN", "geocodigo"])
+            nome = pegar(props, ["name", "nome", "NM_MUN", "description"]) or "?"
+            if codigo is None:
+                continue
             geom = f["geometry"]
             features.append({
                 "type": "Feature",
-                "properties": {"codigo": codigo,
-                               "nome": nomes.get(codigo, "?"),
-                               "uf": UFS.get(codigo[:2], "?")},
+                "properties": {"codigo": codigo, "nome": nome,
+                               "uf": UFS.get(codigo[:2], uf)},
                 "geometry": {"type": geom["type"],
                              "coordinates": arredondar(geom["coordinates"])},
             })
@@ -107,7 +127,7 @@ def main():
                 faltando.append(f'{linha["clube"]} -> {linha["cidade"]}/{linha["uf"]}')
     print("--- CONFERENCIA DAS CIDADES DOS CLUBES ---")
     if faltando:
-        print("Cidades NAO encontradas no IBGE:")
+        print("Cidades NAO encontradas no mapa:")
         for item in faltando:
             print("  ", item)
     else:
