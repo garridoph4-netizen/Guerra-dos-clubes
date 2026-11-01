@@ -1,0 +1,33 @@
+name: Teste 10s
+
+on:
+  workflow_dispatch:
+
+jobs:
+  teste:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Baixar o projeto
+        uses: actions/checkout@v4
+
+      - name: Instalar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Instalar ffmpeg e fontes
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg fonts-dejavu-core
+
+      - name: Instalar bibliotecas
+        run: pip install -r requirements.txt
+
+      - name: Gerar video de teste
+        run: python src/teste_10s.py
+
+      - name: Guardar o MP4
+        uses: actions/upload-artifact@v4
+        with:
+          name: teste-10s
+          path: output/teste_10s.mp4
