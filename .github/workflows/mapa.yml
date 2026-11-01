@@ -1,0 +1,44 @@
+name: Baixar mapa
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  mapa:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Baixar o projeto
+        uses: actions/checkout@v4
+
+      - name: Instalar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Baixar mapa do IBGE
+        shell: bash
+        run: python src/baixar_mapa.py 2>&1 | tee mapa_log.txt
+
+      - name: Mostrar resultado no resumo
+        if: always()
+        run: |
+          echo '### Resultado do mapa' >> $GITHUB_STEP_SUMMARY
+          echo '```' >> $GITHUB_STEP_SUMMARY
+          tail -n 60 mapa_log.txt >> $GITHUB_STEP_SUMMARY
+          echo '```' >> $GITHUB_STEP_SUMMARY
+
+      - name: Conferir tamanho
+        run: |
+          ls -l data/
+          test $(stat -c%s data/municipios.geojson.gz) -lt 95000000
+
+      - name: Salvar no repositorio
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@users.noreply.github.com"
+          git add data/municipios.geojson.gz data/municipios.csv
+          git commit -m "Adiciona mapa dos municipios" || echo "nada para salvar"
+          git push
