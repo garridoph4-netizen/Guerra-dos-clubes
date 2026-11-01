@@ -1,0 +1,52 @@
+name: Executar etapa
+
+on:
+  workflow_dispatch:
+    inputs:
+      etapa:
+        description: "Qual etapa executar"
+        required: true
+        type: choice
+        options:
+          - fronteiras
+          - dividir_cidades
+          - simulacao
+          - episodios
+
+permissions:
+  contents: write
+
+jobs:
+  etapa:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Baixar o projeto
+        uses: actions/checkout@v4
+
+      - name: Instalar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Instalar bibliotecas
+        run: pip install -r requirements.txt
+
+      - name: Executar a etapa
+        shell: bash
+        run: python src/${{ inputs.etapa }}.py 2>&1 | tee etapa_log.txt
+
+      - name: Mostrar resultado no resumo
+        if: always()
+        run: |
+          echo '### Resultado da etapa' >> $GITHUB_STEP_SUMMARY
+          echo '```' >> $GITHUB_STEP_SUMMARY
+          tail -n 70 etapa_log.txt >> $GITHUB_STEP_SUMMARY
+          echo '```' >> $GITHUB_STEP_SUMMARY
+
+      - name: Salvar resultados no repositorio
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@users.noreply.github.com"
+          git add data
+          git commit -m "Resultado da etapa ${{ inputs.etapa }}" || echo "nada para salvar"
+          git push
