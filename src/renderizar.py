@@ -1,144 +1,133 @@
 
 import json
-import os
-import gzip
-import math
-import random
-import argparse
+import subprocess
+import tempfile
 from pathlib import Path
 
-import numpy as np
 from PIL import Image, ImageDraw, ImageFont
 
-LARGURA = 1080
-ALTURA = 1920
-FPS = 30
-
 BASE = Path(__file__).resolve().parent.parent
-DADOS = BASE / "data"
-SAIDA = BASE / "videos"
-SAIDA.mkdir(exist_ok=True)
+DATA = BASE / "data"
+OUT = BASE / "output"
+OUT.mkdir(exist_ok=True)
 
-FUNDO = (8, 14, 29)
-BRANCO = (245, 245, 245)
-DOURADO = (218, 177, 83)
+W, H = 720, 1280
+FPS = 20
+DURACAO = 15
 
-def carregar_json(nome):
-    with open(DADOS / nome, encoding="utf-8") as f:
+def carregar(nome):
+    with open(DATA / nome, encoding="utf-8") as f:
         return json.load(f)
 
-def fonte(tamanho, negrito=False):
+def fonte(tamanho):
     caminhos = [
-        "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf" if negrito
-        else "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"
+        "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf",
+        "/usr/share/fonts/truetype/liberation2/LiberationSans-Bold.ttf",
     ]
     for caminho in caminhos:
-        if os.path.exists(caminho):
+        if Path(caminho).exists():
             return ImageFont.truetype(caminho, tamanho)
     return ImageFont.load_default()
 
-def texto_central(draw, xy, texto, tamanho, cor=BRANCO, negrito=True):
-    f = fonte(tamanho, negrito)
+def centralizar(draw, y, texto, tamanho, cor):
+    f = fonte(tamanho)
     caixa = draw.textbbox((0, 0), str(texto), font=f)
-    x = xy[0] - (caixa[2] - caixa[0]) / 2
-    y = xy[1] - (caixa[3] - caixa[1]) / 2
+    x = (W - (caixa[2] - caixa[0])) // 2
     draw.text((x, y), str(texto), font=f, fill=cor)
 
-def carregar_mapa():
-    caminho = DADOS / "unidades.geojson.gz"
-    with gzip.open(caminho, "rt", encoding="utf-8") as f:
-        return json.load(f)
+def criar_frame(partida, numero, total, progresso):
+    img = Image.new("RGB", (W, H), (7, 13, 28))
+    d = ImageDraw.Draw(img)
 
-def projetar(coordenadas, limites, caixa):
-    minx, miny, maxx, maxy = limites
-    x0, y0, largura, altura = caixa
-    escala = min(largura / (maxx-minx), altura / (maxy-miny))
-    px = x0 + (coordenadas[0]-minx)*escala
-    py = y0 + (maxy-coordenadas[1])*escala
-    return int(px), int(py)
+    dourado = (224, 183, 91)
+    branco = (245, 245, 245)
 
-def desenhar_geometria(draw, geometria, limites, caixa, cor):
-    tipo = geometria["type"]
-    coords = geometria["coordinates"]
+    d.rectangle((0, 0, W, 100), fill=(13, 25, 47))
+    centralizar(d, 25, "GUERRA DOS CLUBES",  thirty := 30, dourado)
 
-    def anel(pontos):
-        return [projetar(p, limites, caixa) for p in pontos]
-
-    if tipo == "Polygon":
-        for anel_coords in coords:
-            pontos = anel(anel_coords)
-            if len(pontos) >= 3:
-                draw.polygon(pontos, fill=cor, outline=(30, 38, 52))
-
-    elif tipo == "MultiPolygon":
-        for poligono in coords:
-            for anel_coords in poligono:
-                pontos = anel(anel_coords)
-                if len(pontos) >= 3:
-                    draw.polygon(pontos, fill=cor, outline=(30, 38, 52))
-
-def cor_clube(clubes, dono):
-    clube = clubes.get(str(dono), {})
-    cor = clube.get("cor1", "#555555")
-    try:
-        return tuple(int(cor[i:i+2], 16) for i in (1, 3, 5))
-    except Exception:
-        return (85, 85, 85)
-
-def criar_frame(partida, unidades, clubes, indice, total_frames):
-    imagem = Image.new("RGB", (LARGURA, ALTURA), FUNDO)
-    draw = ImageDraw.Draw(imagem)
-
-    draw.rectangle((0, 0, LARGURA, 90), fill=(12, 22, 42))
-    texto_central(draw, (LARGURA//2, 45), "GUERRA DOS CLUBES", 42, DOURADO)
-
-    draw.rectangle((0, 900, LARGURA, 905), fill=DOURADO)
-
-    draw.rectangle((0, 910, LARGURA, ALTURA), fill=(10, 17, 32))
+    centralizar(d, 145, "BATALHA TERRITORIAL", 25, branco)
+    centralizar(d, 205, f"PARTIDA {numero}", 23, dourado)
 
     atacante = partida.get("atacante", "?")
     defensor = partida.get("defensor", "?")
-    clubes_lista = list(clubes.values())
 
-    nome_atacante = clubes.get(str(atacante), {}).get("clube", f"Clube {atacante}")
-    nome_defensor = clubes.get(str(defensor), {}).get("clube", f"Clube {defensor}")
+    # Painéis dos dois clubes
+    d.rounded_rectangle((35, 330, 685, 510), radius=24,
+                        fill=(25, 35, 57), outline=(190, 50, 65), width=4)
+    centralizar(d, 355, f"CLUBE {atacante}", 43, branco)
 
-    texto_central(draw, (LARGURA//2, 1010), "DISPUTA TERRITORIAL", 34, DOURADO)
-    texto_central(draw, (LARGURA//2, 1110), nome_atacante, 48)
-    texto_central(draw, (LARGURA//2, 1190), "VS", 65, DOURADO)
-    texto_central(draw, (LARGURA//2, 1270), nome_defensor, 48)
+    centralizar(d, 535, "VS", 65, dourado)
+
+    d.rounded_rectangle((35, 620, 685, 800), radius=24,
+                        fill=(25, 35, 57), outline=(40, 110, 190), width=4)
+    centralizar(d, 675, f"CLUBE {defensor}", 43, branco)
 
     chutes = partida.get("chutes", partida.get("penaltis", []))
-    quantidade = min(len(chutes), max(0, int((indice / max(1, total_frames-1))*len(chutes))))
+    quantidade = int(progresso * len(chutes))
 
-    texto_central(draw, (LARGURA//2, 1400), "PÊNALTIS", 38, DOURADO)
+    centralizar(d, 855, "DISPUTA DE PÊNALTIS", 27, dourado)
 
     for i, chute in enumerate(chutes[:quantidade]):
-        x = 170 + (i % 10) * 75
-        y = 1500 + (i // 10) * 85
-        gol = chute.get("gol", chute.get("resultado") == "gol")
-        cor = (35, 190, 105) if gol else (220, 65, 65)
-        draw.ellipse((x-22, y-22, x+22, y+22), fill=cor)
-        texto_central(draw, (x, y), "G" if gol else "X", 24)
+        x = 70 + (i % 8) * 82
+        y = 940 + (i // 8) * 90
 
-    texto_central(draw, (LARGURA//2, 1740), f"PARTIDA {partida.get('numero', '?')}", 32)
-    return imagem
+        resultado = str(chute.get("resultado", "")).lower()
+        gol = chute.get("gol", resultado in ("gol", "g", "true"))
+
+        cor = (30, 180, 100) if gol else (205, 55, 65)
+        d.ellipse((x-25, y-25, x+25, y+25), fill=cor)
+        centralizar(d, y-17, "G" if gol else "X", 25, branco)
+
+    placar = partida.get("placar", partida.get("gols", ["-", "-"]))
+    if isinstance(placar, list) and len(placar) == 2:
+        texto_placar = f"{placar[0]}  x  {placar[1]}"
+    else:
+        texto_placar = "PÊNALTIS"
+
+    centralizar(d, 1110, texto_placar, 43, branco)
+    centralizar(d, 1200, "SIMULAÇÃO TERRITORIAL", 18, dourado)
+
+    return img
 
 def main():
-    parser = argparse.ArgumentParser()
-    parser.add_argument("--episodio", type=int, default=1)
-    parser.add_argument("--teste", action="store_true")
-    args = parser.parse_args()
+    roteiro = carregar("roteiro.json")
+    partidas = roteiro["partidas"]
 
-    roteiro = carregar_json("roteiro.json")
-    episodios = carregar_json("episodios.json")
-    mapa = carregar_mapa()
-    clubes_dados = carregar_json("territorios.json")
+    if not partidas:
+        raise RuntimeError("O roteiro não possui partidas.")
 
-    print("Dados carregados. Preparando renderização...")
+    partida = partidas[0]
+    total_frames = FPS * DURACAO
 
-    print("ATENÇÃO: renderização visual inicial.")
-    print("Mapa e placar serão refinados após validar os dados.")
+    print("Renderizando primeira partida...")
+    print("Atacante:", partida.get("atacante"))
+    print("Defensor:", partida.get("defensor"))
+
+    with tempfile.TemporaryDirectory() as pasta:
+        padrao = str(Path(pasta) / "frame_%05d.png")
+
+        for i in range(total_frames):
+            progresso = min(1, i / (total_frames - 1))
+            frame = criar_frame(
+                partida, 1, len(partidas), progresso
+            )
+            frame.save(padrao % i)
+
+        destino = OUT / "episodio_1_teste.mp4"
+
+        comando = [
+            "ffmpeg", "-y",
+            "-framerate", str(FPS),
+            "-i", padrao,
+            "-c:v", "libx264",
+            "-pix_fmt", "yuv420p",
+            "-movflags", "+faststart",
+            str(destino)
+        ]
+
+        subprocess.run(comando, check=True)
+
+    print("Vídeo criado:", destino)
 
 if __name__ == "__main__":
     main()
