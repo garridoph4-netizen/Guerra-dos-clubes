@@ -71,8 +71,13 @@ def criar_frame(partida, numero, total, progresso):
         x = 70 + (i % 8) * 82
         y = 940 + (i // 8) * 90
 
-        resultado = str(chute.get("resultado", "")).lower()
-        gol = chute.get("gol", resultado in ("gol", "g", "true"))
+       if isinstance(chute, list):
+    gol = bool(chute[0]) if chute else False
+elif isinstance(chute, dict):
+    resultado = str(chute.get("resultado", "")).lower()
+    gol = chute.get("gol", resultado in ("gol", "g", "true"))
+else:
+    gol = bool(chute)
 
         cor = (30, 180, 100) if gol else (205, 55, 65)
         d.ellipse((x-25, y-25, x+25, y+25), fill=cor)
