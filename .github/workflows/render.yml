@@ -1,0 +1,126 @@
+name: Renderizar video
+
+on:
+  workflow_dispatch:
+    inputs:
+      modo:
+        description: "O que renderizar"
+        required: true
+        type: choice
+        options:
+          - "teste visual (16 segundos)"
+          - "episodio 1"
+          - "episodio 2"
+          - "episodio 3"
+          - "episodio 4"
+          - "episodio 5"
+          - "episodio 6"
+          - "episodio 7"
+          - "episodio 8"
+          - "episodio 9"
+          - "todos os episodios"
+
+jobs:
+  preparar:
+    runs-on: ubuntu-latest
+    outputs:
+      matriz: ${{ steps.m.outputs.matriz }}
+      todos: ${{ steps.m.outputs.todos }}
+    steps:
+      - name: Baixar o projeto
+        uses: actions/checkout@v4
+
+      - name: Montar a lista de trabalhos
+        id: m
+        env:
+          MODO: ${{ inputs.modo }}
+        run: |
+          python3 - <<'PY' >> $GITHUB_OUTPUT
+          import json, os
+          modo = os.environ["MODO"]
+          n = len(json.load(open("data/episodios.json"))["episodios"])
+          if modo.startswith("teste"):
+              itens = [{"ep": 1, "teste": "--teste"}]
+          elif modo.startswith("todos"):
+              itens = [{"ep": i, "teste": ""} for i in range(1, n + 1)]
+          else:
+              itens = [{"ep": int(modo.split()[-1]), "teste": ""}]
+          print("matriz=" + json.dumps({"include": itens}))
+          print("todos=" + ("sim" if modo.startswith("todos") else "nao"))
+          PY
+
+  render:
+    needs: preparar
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    strategy:
+      fail-fast: false
+      matrix: ${{ fromJSON(needs.preparar.outputs.matriz) }}
+    steps:
+      - name: Baixar o projeto
+        uses: actions/checkout@v4
+
+      - name: Instalar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Instalar ffmpeg e fontes
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg fonts-dejavu-core
+          sudo apt-get install -y fonts-montserrat || true
+
+      - name: Instalar bibliotecas
+        run: pip install -r requirements.txt
+
+      - name: Renderizar
+        shell: bash
+        run: python src/renderizar.py ${{ matrix.ep }} ${{ matrix.teste }} 2>&1 | tee render_log.txt
+
+      - name: Mostrar resultado no resumo
+        if: always()
+        run: |
+          echo '### Resultado da renderizacao (episodio ${{ matrix.ep }})' >> $GITHUB_STEP_SUMMARY
+          echo '```' >> $GITHUB_STEP_SUMMARY
+          tail -n 25 render_log.txt >> $GITHUB_STEP_SUMMARY
+          echo '```' >> $GITHUB_STEP_SUMMARY
+
+      - name: Guardar o video
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ matrix.teste == '--teste' && 'teste-visual' || format('episodio-{0}', matrix.ep) }}
+          path: output/*.mp4
+          retention-days: 30
+
+  juntar:
+    needs: [preparar, render]
+    if: needs.preparar.outputs.todos == 'sim'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Baixar os episodios
+        uses: actions/download-artifact@v4
+        with:
+          pattern: episodio-*
+          path: partes
+          merge-multiple: true
+
+      - name: Instalar ffmpeg
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg
+
+      - name: Juntar em um unico MP4
+        run: |
+          ls -l partes
+          for f in $(ls partes/episodio_*.mp4 | sort); do echo "file '$PWD/$f'"; done > lista.txt
+          cat lista.txt
+          ffmpeg -y -loglevel error -f concat -safe 0 -i lista.txt -c copy guerra-dos-clubes-completo.mp4
+          ls -l guerra-dos-clubes-completo.mp4
+
+      - name: Guardar o video completo
+        uses: actions/upload-artifact@v4
+        with:
+          name: video-completo
+          path: guerra-dos-clubes-completo.mp4
+          retention-days: 30
