@@ -1,13 +1,14 @@
-name: Teste 10s
+
+name: Renderizar episódio 1
 
 on:
   workflow_dispatch:
 
 jobs:
-  teste:
+  renderizar:
     runs-on: ubuntu-latest
     steps:
-      - name: Baixar o projeto
+      - name: Baixar projeto
         uses: actions/checkout@v4
 
       - name: Instalar Python
@@ -15,7 +16,7 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Instalar ffmpeg e fontes
+      - name: Instalar FFmpeg e fontes
         run: |
           sudo apt-get update
           sudo apt-get install -y ffmpeg fonts-dejavu-core
@@ -23,11 +24,12 @@ jobs:
       - name: Instalar bibliotecas
         run: pip install -r requirements.txt
 
-      - name: Gerar video de teste
-        run: python src/teste_10s.py
+      - name: Renderizar episódio
+        run: python src/renderizar.py
 
-      - name: Guardar o MP4
+      - name: Salvar vídeo MP4
         uses: actions/upload-artifact@v4
         with:
-          name: teste-10s
-          path: output/teste_10s.mp4
+          name: episodio-1-teste
+          path: output/episodio_1_teste.mp4
+          if-no-files-found: error
