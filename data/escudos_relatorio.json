@@ -1,797 +1,1346 @@
 {
  "Athletico-PR": {
   "status": "ok",
+  "origem": "wikipedia",
   "pagina": "Club Athletico Paranaense",
-  "arquivo_wiki": "Ficheiro:Commons-logo.svg",
-  "arquivo": "escudos/athletico-pr.png"
+  "arquivo_wiki": "Athletico_Paranaense_(Logo_2019).svg",
+  "arquivo": "escudos/athletico-pr.png",
+  "sha1": "b4246c1e9c6a1780dba35cca67783362bc6fd981",
+  "versao": 2
  },
  "Atlético-MG": {
-  "status": "faltando",
-  "pagina": "América Futebol Clube (Belo Horizonte)",
-  "motivo": "sem imagem de escudo"
+  "status": "duvida",
+  "origem": "wikipedia",
+  "pagina": "Flamengo x Atlético-MG (1981)",
+  "arquivo_wiki": "Ficheiro:Clube de Regatas do Flamengo logo.svg",
+  "arquivo": "escudos/atletico-mg.png",
+  "sha1": "9b8894d3bbd953631d5a0a40374a4aaa564e2cc2",
+  "versao": 2
  },
  "Bahia": {
-  "status": "faltando",
-  "motivo": "pagina nao encontrada"
+  "status": "ok",
+  "origem": "wikipedia",
+  "pagina": "Esporte Clube Bahia",
+  "arquivo_wiki": "Esporte_Clube_Bahia_logo.svg",
+  "arquivo": "escudos/bahia.png",
+  "sha1": "d59bfc47e06636eb4517c62b10e42e34de118ba4",
+  "versao": 2
  },
  "Botafogo": {
-  "status": "ok",
-  "pagina": "Botafogo de Futebol e Regatas",
-  "arquivo_wiki": "Ficheiro:Commons-logo.svg",
-  "arquivo": "escudos/botafogo.png"
+  "status": "duvida",
+  "origem": "wikipedia",
+  "pagina": "Botafogo Futebol Clube (João Pessoa)",
+  "arquivo_wiki": "BotafogoPB_logo.png",
+  "arquivo": "escudos/botafogo.png",
+  "sha1": "2fc062666f7900f4208a3e1ce8a93e82b860a43b",
+  "versao": 2
  },
  "Chapecoense": {
-  "status": "faltando",
+  "status": "ok",
+  "origem": "wikipedia",
   "pagina": "Associação Chapecoense de Futebol",
-  "motivo": "sem imagem de escudo"
+  "arquivo_wiki": "Logo_Associação_Chapecoense_de_Futebol.svg",
+  "arquivo": "escudos/chapecoense.png",
+  "sha1": "e78ffba59186ac3da8106af23fa0a27d894f9d56",
+  "versao": 2
  },
  "Corinthians": {
-  "status": "faltando",
-  "motivo": "pagina nao encontrada"
+  "status": "ok",
+  "origem": "wikipedia",
+  "pagina": "Sport Club Corinthians Paulista",
+  "arquivo_wiki": "Corinthians_simbolo.png",
+  "arquivo": "escudos/corinthians.png",
+  "sha1": "a82e1545ff329777ae078c2a8073f85421a45165",
+  "versao": 2
  },
  "Coritiba": {
   "status": "ok",
+  "origem": "wikipedia",
   "pagina": "Coritiba Foot Ball Club",
-  "arquivo_wiki": "Ficheiro:Coritiba Foot Ball Club logo.svg",
-  "arquivo": "escudos/coritiba.png"
+  "arquivo_wiki": "Coritiba_Foot_Ball_Club_logo.svg",
+  "arquivo": "escudos/coritiba.png",
+  "sha1": "0b8bb860fb15edc7b3161ad92492956c59d30dec",
+  "versao": 2
  },
  "Cruzeiro": {
-  "status": "faltando",
-  "pagina": "América Futebol Clube (Belo Horizonte)",
-  "motivo": "sem imagem de escudo"
+  "status": "ok",
+  "origem": "wikipedia",
+  "pagina": "Cruzeiro Esporte Clube (futebol feminino)",
+  "arquivo_wiki": "Cruzeiro_Esporte_Clube_(logo).svg",
+  "arquivo": "escudos/cruzeiro.png",
+  "sha1": "d8142f080878c692d3bcfd4f5a396e91b35193f0",
+  "versao": 2
  },
  "Flamengo": {
   "status": "ok",
+  "origem": "wikipedia",
   "pagina": "Clube de Regatas do Flamengo",
-  "arquivo_wiki": "Ficheiro:Commons-logo.svg",
-  "arquivo": "escudos/flamengo.png"
+  "arquivo_wiki": "Clube_de_Regatas_do_Flamengo_logo.svg",
+  "arquivo": "escudos/flamengo.png",
+  "sha1": "9b8894d3bbd953631d5a0a40374a4aaa564e2cc2",
+  "versao": 2
  },
  "Fluminense": {
-  "status": "faltando",
-  "pagina": "Futebol Clube Rio de Janeiro",
-  "motivo": "sem imagem de escudo"
+  "status": "duvida",
+  "origem": "wikipedia",
+  "pagina": "Fluminense de Feira Futebol Clube",
+  "arquivo_wiki": "Fluminense-de-feira.png",
+  "arquivo": "escudos/fluminense.png",
+  "sha1": "f74fc9eb205bf15a92193bfc3df0adfa62fc0692",
+  "versao": 2
  },
  "Grêmio": {
-  "status": "faltando",
-  "motivo": "pagina nao encontrada"
+  "status": "ok",
+  "origem": "wikipedia",
+  "pagina": "Grêmio Foot-Ball Porto Alegrense",
+  "arquivo_wiki": "Gremio_logo.svg",
+  "arquivo": "escudos/gremio.png",
+  "sha1": "ed4f65d2484e5624447ec21b511334606b2ea3bb",
+  "versao": 2
  },
  "Internacional": {
-  "status": "faltando",
-  "motivo": "pagina nao encontrada"
+  "status": "ok",
+  "origem": "wikipedia",
+  "pagina": "Sport Club Internacional",
+  "arquivo_wiki": "Sport_Club_Internacional_logo.svg",
+  "arquivo": "escudos/internacional.png",
+  "sha1": "5a83415c6fde441cce8482435e0f855566b1b8c0",
+  "versao": 2
  },
  "Mirassol": {
   "status": "ok",
+  "origem": "wikipedia",
   "pagina": "Mirassol Futebol Clube",
-  "arquivo_wiki": "Ficheiro:Logo Projet Correction syntaxique.svg",
-  "arquivo": "escudos/mirassol.png"
+  "arquivo_wiki": "Mirassol_Futebol_Clube_logo_(3_stars).png",
+  "arquivo": "escudos/mirassol.png",
+  "sha1": "1e29ec661f5c060fd4de1c055c74f1b7150b26e5",
+  "versao": 2
  },
  "Palmeiras": {
-  "status": "faltando",
-  "pagina": "São Paulo Futebol Clube",
-  "motivo": "sem imagem de escudo"
+  "status": "duvida",
+  "origem": "wikipedia",
+  "pagina": "Palmeiras Futebol Clube",
+  "arquivo_wiki": "PalmeirasFC.png",
+  "arquivo": "escudos/palmeiras.png",
+  "sha1": "8e6e59f992632f4c01e17fd48ecfaa8fdba0ba52",
+  "versao": 2
  },
  "Red Bull Bragantino": {
   "status": "duvida",
+  "origem": "wikipedia",
   "pagina": "Red Bull Bragantino",
-  "arquivo_wiki": "Ficheiro:RedBullBragantino.png",
-  "arquivo": "escudos/red-bull-bragantino.png"
+  "arquivo_wiki": "RedBullBragantino.png",
+  "arquivo": "escudos/red-bull-bragantino.png",
+  "sha1": "f01f1e2616088f92e0e0dfeb456064db2eab98e8",
+  "versao": 2
  },
  "Remo": {
-  "status": "faltando",
+  "status": "duvida",
+  "origem": "wikipedia",
   "pagina": "Clube do Remo",
-  "motivo": "sem imagem de escudo"
+  "arquivo_wiki": "Clube_do_Remo.svg",
+  "arquivo": "escudos/remo.png",
+  "sha1": "22695f2ca6241e4c9c3b0c04c00e61ea75f246d2",
+  "versao": 2
  },
  "Santos": {
   "status": "ok",
+  "origem": "wikipedia",
   "pagina": "Santos Futebol Clube",
-  "arquivo_wiki": "Ficheiro:Commons-logo.svg",
-  "arquivo": "escudos/santos.png"
+  "arquivo_wiki": "Santos_Futebol_Clube_logo_(with_stars_and_crown).png",
+  "arquivo": "escudos/santos.png",
+  "sha1": "194175eec7620bc23fed703079a837acee0a8a00",
+  "versao": 2
  },
  "São Paulo": {
-  "status": "faltando",
+  "status": "ok",
+  "origem": "wikipedia",
   "pagina": "São Paulo Futebol Clube",
-  "motivo": "sem imagem de escudo"
+  "arquivo_wiki": "São_Paulo_Futebol_Clube_logo_(2022).svg",
+  "arquivo": "escudos/sao-paulo.png",
+  "sha1": "f707dbf090e9a60624b2ef990a1ac559163e2078",
+  "versao": 2
  },
  "Vasco": {
-  "status": "faltando",
-  "motivo": "pagina nao encontrada"
+  "status": "duvida",
+  "origem": "wikipedia",
+  "pagina": "Vasco Almirantes",
+  "arquivo_wiki": "VascoAlmirantes.png",
+  "arquivo": "escudos/vasco.png",
+  "sha1": "cfe3dccd2a82044a5bc0a394e5b579333b5b1781",
+  "versao": 2
  },
  "Vitória": {
-  "status": "ok",
+  "status": "duvida",
+  "origem": "wikipedia",
   "pagina": "Vitória Futebol Clube (Brasil)",
-  "arquivo_wiki": "Ficheiro:Brasão de Vitória, Espírito Santo.svg",
-  "arquivo": "escudos/vitoria.png"
+  "arquivo_wiki": "VitóriaFCES.png",
+  "arquivo": "escudos/vitoria.png",
+  "sha1": "47f79544c8e3d25f25b1ccb7aa821f7114602ee1",
+  "versao": 2
  },
  "América-MG": {
-  "status": "faltando",
+  "status": "ok",
+  "origem": "wikipedia",
   "pagina": "América Futebol Clube (Belo Horizonte)",
-  "motivo": "sem imagem de escudo"
+  "arquivo_wiki": "América_Futebol_Clube_(Belo_Horizonte,_Minas_Gerais)_logo.svg",
+  "arquivo": "escudos/america-mg.png",
+  "sha1": "6969a412dd25d05b8a42ff8b3859a5a75cdd83cf",
+  "versao": 2
  },
  "Athletic Club": {
   "status": "duvida",
+  "origem": "wikipedia",
   "pagina": "Athletic Club (Minas Gerais)",
-  "arquivo_wiki": "Ficheiro:Athletic_Club_(Minas_Gerais).svg",
-  "arquivo": "escudos/athletic-club.png"
+  "arquivo_wiki": "Athletic_Club_(Minas_Gerais).svg",
+  "arquivo": "escudos/athletic-club.png",
+  "sha1": "488c592010330b0ac75bf975f99bee8e6cf25705",
+  "versao": 2
  },
  "Atlético-GO": {
   "status": "faltando",
-  "pagina": "Goiânia Esporte Clube",
-  "motivo": "sem imagem de escudo"
+  "motivo": "nao encontrado em nenhuma fonte",
+  "versao": 2
  },
  "Avaí": {
   "status": "ok",
+  "origem": "wikipedia",
   "pagina": "Avaí Futebol Clube",
-  "arquivo_wiki": "Ficheiro:Commons-logo.svg",
-  "arquivo": "escudos/avai.png"
+  "arquivo_wiki": "Avaí_Futebol_Clube_logo.svg",
+  "arquivo": "escudos/avai.png",
+  "sha1": "e2a774935d6daaa33ce5a629e05f71b69a21cbeb",
+  "versao": 2
  },
  "Botafogo-SP": {
-  "status": "faltando",
+  "status": "duvida",
+  "origem": "wikipedia",
   "pagina": "Botafogo Futebol Clube (Ribeirão Preto)",
-  "motivo": "sem imagem de escudo"
+  "arquivo_wiki": "Botafogo_Futebol_Clube.svg",
+  "arquivo": "escudos/botafogo-sp.png",
+  "sha1": "6cb04aee334837e9af25fd5e404c1873add306fe",
+  "versao": 2
  },
  "Ceará": {
-  "status": "faltando",
-  "motivo": "pagina nao encontrada"
+  "status": "duvida",
+  "origem": "wikipedia",
+  "pagina": "Ferroviário Atlético Clube (Ceará)",
+  "arquivo_wiki": "Escudo_do_Ferroviário_Atlético_Clube.png",
+  "arquivo": "escudos/ceara.png",
+  "sha1": "35d697d0d2b157d3d2e89f3748597f8d7ea79489",
+  "versao": 2
  },
  "CRB": {
-  "status": "ok",
-  "pagina": "Centro Sportivo Alagoano",
-  "arquivo_wiki": "Ficheiro:Wikiquote-logo.svg",
-  "arquivo": "escudos/crb.png"
+  "status": "faltando",
+  "motivo": "nao encontrado em nenhuma fonte",
+  "versao": 2
  },
  "Criciúma": {
-  "status": "faltando",
+  "status": "ok",
+  "origem": "wikipedia",
   "pagina": "Criciúma Esporte Clube",
-  "motivo": "sem imagem de escudo"
+  "arquivo_wiki": "Criciúma_EC_2025_crest.svg",
+  "arquivo": "escudos/criciuma.png",
+  "sha1": "84dbb9f97d5db009d1472dd925fc78f7dc607215",
+  "versao": 2
  },
  "Cuiabá": {
   "status": "duvida",
+  "origem": "wikipedia",
   "pagina": "Cuiabá Esporte Clube",
-  "arquivo_wiki": "Ficheiro:Cuiabá_Esporte_Clube.svg",
-  "arquivo": "escudos/cuiaba.png"
+  "arquivo_wiki": "Cuiabá_Esporte_Clube.svg",
+  "arquivo": "escudos/cuiaba.png",
+  "sha1": "4f30dceabfabb9247a806a260a8c871c46c760ad",
+  "versao": 2
  },
  "Fortaleza": {
-  "status": "faltando",
+  "status": "ok",
+  "origem": "wikipedia",
   "pagina": "Fortaleza Esporte Clube",
-  "motivo": "sem imagem de escudo"
+  "arquivo_wiki": "Fortaleza_Esporte_Clube_logo.svg",
+  "arquivo": "escudos/fortaleza.png",
+  "sha1": "5c10bd6822e15d2e862a2aff1ddcd64189b100e3",
+  "versao": 2
  },
  "Goiás": {
   "status": "ok",
-  "pagina": "Goiânia Esporte Clube",
-  "arquivo_wiki": "Ficheiro:Commons-logo.svg",
-  "arquivo": "escudos/goias.png"
+  "origem": "wikipedia",
+  "pagina": "Goiás Esporte Clube",
+  "arquivo_wiki": "Goiás_Esporte_Clube_logo.svg",
+  "arquivo": "escudos/goias.png",
+  "sha1": "8b55fb56cf6d58ae32c7db44e0839ab1e48f0cac",
+  "versao": 2
  },
  "Juventude": {
-  "status": "faltando",
+  "status": "ok",
+  "origem": "wikipedia",
   "pagina": "Esporte Clube Juventude",
-  "motivo": "sem imagem de escudo"
+  "arquivo_wiki": "Esporte_Clube_Juventude_logo.svg",
+  "arquivo": "escudos/juventude.png",
+  "sha1": "5d6f255b29c51a2b0a893c1c4b04d63afbc1bd15",
+  "versao": 2
  },
  "Londrina": {
-  "status": "faltando",
-  "motivo": "pagina nao encontrada"
+  "status": "duvida",
+  "origem": "wikipedia",
+  "pagina": "Londrina Esporte Clube",
+  "arquivo_wiki": "Londrina_EC.png",
+  "arquivo": "escudos/londrina.png",
+  "sha1": "71f9a15047f296d125c2e9012b346b1eee1208f6",
+  "versao": 2
  },
  "Náutico": {
   "status": "ok",
+  "origem": "wikipedia",
   "pagina": "Clube Náutico Capibaribe",
-  "arquivo_wiki": "Ficheiro:Commons-logo.svg",
-  "arquivo": "escudos/nautico.png"
+  "arquivo_wiki": "Simbolo-escudo-nautico.png",
+  "arquivo": "escudos/nautico.png",
+  "sha1": "9cb7862d64b9782b3683f6347501f7e9b4b4b046",
+  "versao": 2
  },
  "Novorizontino": {
-  "status": "faltando",
+  "status": "duvida",
+  "origem": "wikipedia",
   "pagina": "Grêmio Novorizontino",
-  "motivo": "sem imagem de escudo"
+  "arquivo_wiki": "Grêmio_Novorizontino.svg",
+  "arquivo": "escudos/novorizontino.png",
+  "sha1": "cbcdd8a235cbc397cbb08b6732eea3f213d301f1",
+  "versao": 2
  },
  "Operário-PR": {
-  "status": "faltando",
-  "motivo": "pagina nao encontrada"
+  "status": "ok",
+  "origem": "wikipedia",
+  "pagina": "Operário Ferroviário Esporte Clube",
+  "arquivo_wiki": "Operário_Ferroviário_Esporte_Clube_logo.svg",
+  "arquivo": "escudos/operario-pr.png",
+  "sha1": "1b46f475509c4e0402d3cf29fc8a8e35236d46c7",
+  "versao": 2
  },
  "Ponte Preta": {
-  "status": "faltando",
-  "motivo": "pagina nao encontrada"
+  "status": "ok",
+  "origem": "wikipedia",
+  "pagina": "Associação Atlética Ponte Preta",
+  "arquivo_wiki": "Logo_AA_Ponte_Preta.svg",
+  "arquivo": "escudos/ponte-preta.png",
+  "sha1": "d40e4a02677145f46bd0fd809287a68a9e166a38",
+  "versao": 2
  },
  "São Bernardo": {
   "status": "ok",
+  "origem": "wikipedia",
   "pagina": "São Bernardo Futebol Clube",
-  "arquivo_wiki": "Ficheiro:São Bernardo FC 2020 crest.png",
-  "arquivo": "escudos/sao-bernardo.png"
+  "arquivo_wiki": "São_Bernardo_FC_2020_crest.png",
+  "arquivo": "escudos/sao-bernardo.png",
+  "sha1": "af7e7f06ffabb3fe20e0c9cf9ebfe5f199529232",
+  "versao": 2
  },
  "Sport": {
-  "status": "faltando",
+  "status": "duvida",
+  "origem": "wikipedia",
   "pagina": "Sport Club do Recife",
-  "motivo": "sem imagem de escudo"
+  "arquivo_wiki": "Sport-clube-recife.svg",
+  "arquivo": "escudos/sport.png",
+  "sha1": "3c735758c491f3df8baec6cfa0137c1b36576517",
+  "versao": 2
  },
  "Vila Nova": {
   "status": "ok",
+  "origem": "wikipedia",
   "pagina": "Vila Nova Futebol Clube",
-  "arquivo_wiki": "Ficheiro:Vila_Nova_Logo_Oficial.svg",
-  "arquivo": "escudos/vila-nova.png"
+  "arquivo_wiki": "Vila_Nova_Logo_Oficial.svg",
+  "arquivo": "escudos/vila-nova.png",
+  "sha1": "2cb2be105c3e7d722f7277cffc39dcf0c0213d7a",
+  "versao": 2
  },
  "Amazonas FC": {
   "status": "duvida",
+  "origem": "wikipedia",
   "pagina": "Amazonas Futebol Clube",
-  "arquivo_wiki": "Ficheiro:AmazonasFC.png",
-  "arquivo": "escudos/amazonas-fc.png"
+  "arquivo_wiki": "AmazonasFC.png",
+  "arquivo": "escudos/amazonas-fc.png",
+  "sha1": "7a85b53f438cf150bf9ce980bf3654922b4365b8",
+  "versao": 2
  },
  "Anápolis": {
   "status": "duvida",
+  "origem": "wikipedia",
   "pagina": "Anápolis Futebol Clube",
-  "arquivo_wiki": "Ficheiro:Anápolis-GO_(BRA).png",
-  "arquivo": "escudos/anapolis.png"
+  "arquivo_wiki": "Anápolis-GO_(BRA).png",
+  "arquivo": "escudos/anapolis.png",
+  "sha1": "3ca1ee9e652065fb528508e77737d93b728bda5b",
+  "versao": 2
  },
  "Barra-SC": {
-  "status": "faltando",
-  "motivo": "pagina nao encontrada"
+  "status": "ok",
+  "origem": "wikipedia",
+  "pagina": "Barra Futebol Clube (Santa Catarina)",
+  "arquivo_wiki": "Barra_FC_2021_crest.png",
+  "arquivo": "escudos/barra-sc.png",
+  "sha1": "0d851937b69a9684d47dbf73e96449eb4e8ac21b",
+  "versao": 2
  },
  "Botafogo-PB": {
-  "status": "faltando",
-  "motivo": "pagina nao encontrada"
+  "status": "duvida",
+  "origem": "wikipedia",
+  "pagina": "Botafogo Futebol Clube (João Pessoa)",
+  "arquivo_wiki": "BotafogoPB_logo.png",
+  "arquivo": "escudos/botafogo-pb.png",
+  "sha1": "2fc062666f7900f4208a3e1ce8a93e82b860a43b",
+  "versao": 2
  },
  "Brusque": {
-  "status": "faltando",
-  "motivo": "pagina nao encontrada"
+  "status": "ok",
+  "origem": "wikipedia",
+  "pagina": "Brusque Futebol Clube",
+  "arquivo_wiki": "Brusque_Futebol_Clube_logo.svg",
+  "arquivo": "escudos/brusque.png",
+  "sha1": "e331fd15b02ddda4a74aab0b3567eebec5dabac1",
+  "versao": 2
  },
  "Caxias": {
-  "status": "faltando",
-  "motivo": "pagina nao encontrada"
+  "status": "ok",
+  "origem": "wikipedia",
+  "pagina": "Sociedade Esportiva e Recreativa Caxias do Sul",
+  "arquivo_wiki": "Escudo_Oficial_da_Sociedade_Esportiva_e_Recreativa_Caxias_do_Sul.svg",
+  "arquivo": "escudos/caxias.png",
+  "sha1": "fa8f15701d96944d965dc94265c3bf6242473960",
+  "versao": 2
  },
  "Confiança": {
-  "status": "faltando",
-  "motivo": "pagina nao encontrada"
+  "status": "ok",
+  "origem": "wikipedia",
+  "pagina": "Associação Desportiva Confiança",
+  "arquivo_wiki": "Associação_Desportiva_Confiança_logo.svg",
+  "arquivo": "escudos/confianca.png",
+  "sha1": "0c7df44adc0cb9c1d9853b5fde960bd291bea1e9",
+  "versao": 2
  },
  "Ferroviária": {
   "status": "ok",
+  "origem": "wikipedia",
   "pagina": "Associação Ferroviária de Esportes",
-  "arquivo_wiki": "Ficheiro:Associação Ferroviária de Esportes logo.svg",
-  "arquivo": "escudos/ferroviaria.png"
+  "arquivo_wiki": "Associação_Ferroviária_de_Esportes_logo.svg",
+  "arquivo": "escudos/ferroviaria.png",
+  "sha1": "5ed489c0b9beee960c320dddab4cc86b4f884940",
+  "versao": 2
  },
  "Figueirense": {
-  "status": "faltando",
+  "status": "duvida",
+  "origem": "wikipedia",
   "pagina": "Figueirense Futebol Clube",
-  "motivo": "sem imagem de escudo"
+  "arquivo_wiki": "Figueirense_Futebol_Clube.svg",
+  "arquivo": "escudos/figueirense.png",
+  "sha1": "9d1a1394ffd966297345ba40e9d094acdf264cb6",
+  "versao": 2
  },
  "Floresta": {
   "status": "duvida",
+  "origem": "wikipedia",
   "pagina": "Floresta Esporte Clube",
-  "arquivo_wiki": "Ficheiro:Floresta_Esporte_Clube.png",
-  "arquivo": "escudos/floresta.png"
+  "arquivo_wiki": "Floresta_Esporte_Clube.png",
+  "arquivo": "escudos/floresta.png",
+  "sha1": "21f8b9ce1ad4a8333d89ee758e23d4be9e349454",
+  "versao": 2
  },
  "Guarani": {
   "status": "ok",
+  "origem": "wikipedia",
   "pagina": "Guarani Futebol Clube",
-  "arquivo_wiki": "Ficheiro:Guarani_Futebol_Clube_logo.svg",
-  "arquivo": "escudos/guarani.png"
+  "arquivo_wiki": "Guarani_Futebol_Clube_logo.svg",
+  "arquivo": "escudos/guarani.png",
+  "sha1": "f446424deb87b5828aa1bee1b2396162ee0c9959",
+  "versao": 2
  },
  "Inter de Limeira": {
   "status": "duvida",
+  "origem": "wikipedia",
   "pagina": "Independente Futebol Clube (Limeira)",
-  "arquivo_wiki": "Ficheiro:Independente_limeira.png",
-  "arquivo": "escudos/inter-de-limeira.png"
+  "arquivo_wiki": "Independente_limeira.png",
+  "arquivo": "escudos/inter-de-limeira.png",
+  "sha1": "2de4331d4fcfdebb55828921cbeaa85a31fb6f59",
+  "versao": 2
  },
  "Itabaiana": {
-  "status": "faltando",
-  "motivo": "pagina nao encontrada"
+  "status": "ok",
+  "origem": "wikipedia",
+  "pagina": "Associação Olímpica de Itabaiana",
+  "arquivo_wiki": "Associação_Olímpica_de_Itabaiana_logo.png",
+  "arquivo": "escudos/itabaiana.png",
+  "sha1": "a24fb3be8cbe6f779690ee7024aa836fa966bbda",
+  "versao": 2
  },
  "Ituano": {
-  "status": "faltando",
-  "motivo": "pagina nao encontrada"
+  "status": "ok",
+  "origem": "wikipedia",
+  "pagina": "Ituano Futebol Clube",
+  "arquivo_wiki": "Ituano_Futebol_Clube_logo.svg",
+  "arquivo": "escudos/ituano.png",
+  "sha1": "1d39702a22065260b57250478841afb7ad6ea9a3",
+  "versao": 2
  },
  "Maranhão": {
-  "status": "faltando",
-  "motivo": "pagina nao encontrada"
+  "status": "duvida",
+  "origem": "wikipedia",
+  "pagina": "Maranhão Atlético Clube",
+  "arquivo_wiki": "Maranhão_Atlético_Clube.png",
+  "arquivo": "escudos/maranhao.png",
+  "sha1": "2a01a01b05fc7321fe9e1d00011863db92f514cf",
+  "versao": 2
  },
  "Maringá": {
-  "status": "faltando",
-  "motivo": "pagina nao encontrada"
+  "status": "ok",
+  "origem": "wikipedia",
+  "pagina": "Maringá Futebol Clube (2010)",
+  "arquivo_wiki": "Escudo_do_Maringá_FC_2026.png",
+  "arquivo": "escudos/maringa.png",
+  "sha1": "de5be6a32be7efe1d55e69e9b0430992d7f81de7",
+  "versao": 2
  },
  "Paysandu": {
-  "status": "faltando",
-  "motivo": "pagina nao encontrada"
+  "status": "duvida",
+  "origem": "wikipedia",
+  "pagina": "Paysandu Sport Club",
+  "arquivo_wiki": "PaysanduSC.png",
+  "arquivo": "escudos/paysandu.png",
+  "sha1": "9c1513ff5998eadb26a12893990b9dd47edc990f",
+  "versao": 2
  },
  "Santa Cruz": {
   "status": "ok",
+  "origem": "wikipedia",
   "pagina": "Santa Cruz Futebol Clube",
-  "arquivo_wiki": "Ficheiro:Santa_Cruz_Futebol_Clube_logo.svg",
-  "arquivo": "escudos/santa-cruz.png"
+  "arquivo_wiki": "Santa_Cruz_Futebol_Clube_logo.svg",
+  "arquivo": "escudos/santa-cruz.png",
+  "sha1": "658d4e1c3fa430cd6ff483bcc4300020ac7edef7",
+  "versao": 2
  },
  "Volta Redonda": {
   "status": "duvida",
+  "origem": "wikipedia",
   "pagina": "Volta Redonda Futebol Clube",
-  "arquivo_wiki": "Ficheiro:Volta_Redonda_Futebol_Clube.svg",
-  "arquivo": "escudos/volta-redonda.png"
+  "arquivo_wiki": "Volta_Redonda_Futebol_Clube.svg",
+  "arquivo": "escudos/volta-redonda.png",
+  "sha1": "670d5f473be9692f57ae5cf77372d61a502b3281",
+  "versao": 2
  },
  "Ypiranga-RS": {
-  "status": "ok",
+  "status": "duvida",
+  "origem": "wikipedia",
   "pagina": "Ypiranga Futebol Clube (Erechim)",
-  "arquivo_wiki": "Ficheiro:Commons-logo.svg",
-  "arquivo": "escudos/ypiranga-rs.png"
+  "arquivo_wiki": "Ypiranga_Futebol_Clube.png",
+  "arquivo": "escudos/ypiranga-rs.png",
+  "sha1": "20a68eef3496ed091b9a7baa3a35e57df4a22527",
+  "versao": 2
  },
  "Nacional-AM": {
-  "status": "ok",
-  "pagina": "Manaus Futebol Clube",
-  "arquivo_wiki": "Ficheiro:Escudo_do_Manaus_Futebol_Clube.png",
-  "arquivo": "escudos/nacional-am.png"
+  "status": "duvida",
+  "origem": "wikipedia",
+  "pagina": "Nacional Futebol Clube (Amazonas)",
+  "arquivo_wiki": "Nacional_FC_Amazonas_2021.png",
+  "arquivo": "escudos/nacional-am.png",
+  "sha1": "a77652f736e44baac99979f8c255d9991b6832f6",
+  "versao": 2
  },
  "Manaus": {
   "status": "ok",
+  "origem": "wikipedia",
   "pagina": "Manaus Futebol Clube",
-  "arquivo_wiki": "Ficheiro:Campeonato Brasileiro Série D logo (2022).svg",
-  "arquivo": "escudos/manaus.png"
+  "arquivo_wiki": "Escudo_do_Manaus_Futebol_Clube.png",
+  "arquivo": "escudos/manaus.png",
+  "sha1": "b2733fbb2d6a35411fa89fc28421a9fca81d7c9d",
+  "versao": 2
  },
  "Manauara": {
-  "status": "duvida",
+  "status": "ok",
+  "origem": "wikipedia",
   "pagina": "Manauara Esporte Clube",
-  "arquivo_wiki": "Ficheiro:Manauara_EC-AM_(BRA)_logo.png",
-  "arquivo": "escudos/manauara.png"
+  "arquivo_wiki": "Manauara_EC-AM_(BRA)_logo.png",
+  "arquivo": "escudos/manauara.png",
+  "sha1": "f94d614e21ca710e0ea20225ea04d0c4c267798b",
+  "versao": 2
  },
  "GAS": {
-  "status": "duvida",
-  "pagina": "Monte Roraima Futebol Clube",
-  "arquivo_wiki": "Ficheiro:Monte_Roraima_Futebol.png",
-  "arquivo": "escudos/gas.png"
+  "status": "faltando",
+  "motivo": "nao encontrado em nenhuma fonte",
+  "versao": 2
  },
  "Monte Roraima": {
-  "status": "faltando",
-  "motivo": "pagina nao encontrada"
+  "status": "duvida",
+  "origem": "wikipedia",
+  "pagina": "Monte Roraima Futebol Clube",
+  "arquivo_wiki": "Monte_Roraima_Futebol.png",
+  "arquivo": "escudos/monte-roraima.png",
+  "sha1": "1a3839249608db9a34cacc920e3af0ffd22b89b9",
+  "versao": 2
  },
  "São Raimundo-RR": {
-  "status": "faltando",
-  "motivo": "pagina nao encontrada"
+  "status": "ok",
+  "origem": "wikipedia",
+  "pagina": "São Raimundo Esporte Clube (Roraima)",
+  "arquivo_wiki": "Escudo_do_São_Raimundo-RR.png",
+  "arquivo": "escudos/sao-raimundo-rr.png",
+  "sha1": "82a2a1acda8970e3040bdb7f1c8bfafa6907d731",
+  "versao": 2
  },
  "Independência": {
-  "status": "faltando",
-  "motivo": "pagina nao encontrada"
+  "status": "duvida",
+  "origem": "wikipedia",
+  "pagina": "Independência Futebol Clube",
+  "arquivo_wiki": "Escudoindependenciafc.png",
+  "arquivo": "escudos/independencia.png",
+  "sha1": "cad312e8faeecf111f17fb3362be027ba6ec071c",
+  "versao": 2
  },
  "Galvez": {
-  "status": "faltando",
-  "motivo": "pagina nao encontrada"
+  "status": "duvida",
+  "origem": "wikipedia",
+  "pagina": "Galvez Esporte Clube",
+  "arquivo_wiki": "Galvez_ac.png",
+  "arquivo": "escudos/galvez.png",
+  "sha1": "83af670ccd43b01d8d834464262f61b861d9b094",
+  "versao": 2
  },
  "Humaitá": {
   "status": "duvida",
+  "origem": "wikipedia",
   "pagina": "Sport Clube Humaitá",
-  "arquivo_wiki": "Ficheiro:SCHumaita.png",
-  "arquivo": "escudos/humaita.png"
+  "arquivo_wiki": "SCHumaita.png",
+  "arquivo": "escudos/humaita.png",
+  "sha1": "f7600f037c9c576456d54ad4b87d140009291dfc",
+  "versao": 2
  },
  "Porto Velho": {
   "status": "duvida",
+  "origem": "wikipedia",
   "pagina": "Porto Velho Esporte Clube",
-  "arquivo_wiki": "Ficheiro:PortoVelhoEC.png",
-  "arquivo": "escudos/porto-velho.png"
+  "arquivo_wiki": "PortoVelhoEC.png",
+  "arquivo": "escudos/porto-velho.png",
+  "sha1": "5d536e53ab45f552d0b5c19a9c849b192ab9cc36",
+  "versao": 2
  },
  "Guaporé": {
   "status": "duvida",
+  "origem": "wikipedia",
   "pagina": "Guaporé Futebol Clube",
-  "arquivo_wiki": "Ficheiro:Guaporé_FC.png",
-  "arquivo": "escudos/guapore.png"
+  "arquivo_wiki": "Guaporé_FC.png",
+  "arquivo": "escudos/guapore.png",
+  "sha1": "6f35a0f7954398b423356c3982f5ab0d3cf1b6b0",
+  "versao": 2
  },
  "Araguaína": {
-  "status": "faltando",
-  "motivo": "pagina nao encontrada"
+  "status": "duvida",
+  "origem": "wikipedia",
+  "pagina": "Araguaína Futebol e Regatas",
+  "arquivo_wiki": "AraguainaFR.png",
+  "arquivo": "escudos/araguaina.png",
+  "sha1": "4bd749330a8d8035bbf648a57369f6cdaa2de7b2",
+  "versao": 2
  },
  "Gama": {
-  "status": "faltando",
-  "motivo": "pagina nao encontrada"
+  "status": "ok",
+  "origem": "wikipedia",
+  "pagina": "Sociedade Esportiva do Gama",
+  "arquivo_wiki": "Sociedade_Esportiva_do_Gama_logo_(1_gold_star).svg",
+  "arquivo": "escudos/gama.png",
+  "sha1": "d5efc0cdfa227f20c85280073062ec0ade1b5fd4",
+  "versao": 2
  },
  "Brasiliense": {
-  "status": "faltando",
-  "motivo": "pagina nao encontrada"
+  "status": "duvida",
+  "origem": "wikipedia",
+  "pagina": "Brasiliense Futebol Clube",
+  "arquivo_wiki": "Brasiliense_Futebol_Clube.png",
+  "arquivo": "escudos/brasiliense.png",
+  "sha1": "7e97b2a75ad210929de8115431938ba5f6715689",
+  "versao": 2
  },
  "Luverdense": {
-  "status": "faltando",
-  "motivo": "pagina nao encontrada"
+  "status": "duvida",
+  "origem": "wikipedia",
+  "pagina": "Luverdense Esporte Clube",
+  "arquivo_wiki": "Luverdense_(3_stars).png",
+  "arquivo": "escudos/luverdense.png",
+  "sha1": "79c8be30ded1f396038966fae564f45e7d44881d",
+  "versao": 2
  },
  "Primavera-MT": {
-  "status": "faltando",
-  "motivo": "pagina nao encontrada"
+  "status": "duvida",
+  "origem": "wikipedia",
+  "pagina": "Primavera Atlético Clube",
+  "arquivo_wiki": "PrimaveraAC.png",
+  "arquivo": "escudos/primavera-mt.png",
+  "sha1": "9c381c9858294046d41cdfa12a6e249e2fe1f4df",
+  "versao": 2
  },
  "Inhumas": {
   "status": "duvida",
+  "origem": "wikipedia",
   "pagina": "Inhumas Esporte Clube",
-  "arquivo_wiki": "Ficheiro:InhumasEC.png",
-  "arquivo": "escudos/inhumas.png"
+  "arquivo_wiki": "InhumasEC.png",
+  "arquivo": "escudos/inhumas.png",
+  "sha1": "e9e49614a85707e8859c187ef723bcff9245667e",
+  "versao": 2
  },
  "Aparecidense": {
   "status": "duvida",
-  "pagina": "Aparecida de Goiânia",
-  "arquivo_wiki": "Ficheiro:Rua_Dourados,_St._dos_Afonsos,_Aparecida_de_Goiânia,_dezembro_de_2023.jpg",
-  "arquivo": "escudos/aparecidense.png"
+  "origem": "wikipedia",
+  "pagina": "Associação Atlética Aparecidense",
+  "arquivo_wiki": "Aparecidense2022.png",
+  "arquivo": "escudos/aparecidense.png",
+  "sha1": "99a57d471bf3ab536b5d67c20f9958ca454c8f20",
+  "versao": 2
  },
  "Capital": {
   "status": "ok",
-  "pagina": "Brasília Futebol Clube",
-  "arquivo_wiki": "Ficheiro:BrasiliaFC (2020 logo).png",
-  "arquivo": "escudos/capital.png"
+  "origem": "wikipedia",
+  "pagina": "Capital Clube de Futebol",
+  "arquivo_wiki": "Capital_CF_escudo_(2024).png",
+  "arquivo": "escudos/capital.png",
+  "sha1": "d3ccb182dea43109b2ae76afa7bf1c3ec67d0bdf",
+  "versao": 2
  },
  "Ceilândia": {
-  "status": "duvida",
+  "status": "ok",
+  "origem": "wikipedia",
   "pagina": "Ceilândia Esporte Clube",
-  "arquivo_wiki": "Ficheiro:Escudo ceilandia-removebg-preview.png",
-  "arquivo": "escudos/ceilandia.png"
+  "arquivo_wiki": "Escudo_ceilandia-removebg-preview.png",
+  "arquivo": "escudos/ceilandia.png",
+  "sha1": "f1e4b632ea32bc56dadf59e140f887b788b4fd01",
+  "versao": 2
  },
  "Mixto": {
-  "status": "ok",
+  "status": "duvida",
+  "origem": "wikipedia",
   "pagina": "Mixto Esporte Clube",
-  "arquivo_wiki": "Ficheiro:Brasão de Cuiabá.svg",
-  "arquivo": "escudos/mixto.png"
+  "arquivo_wiki": "Mixto_EC.svg",
+  "arquivo": "escudos/mixto.png",
+  "sha1": "c993c3a0318c3d9a1a92b43d35817bb28ef7653c",
+  "versao": 2
  },
  "Operário VG": {
   "status": "duvida",
+  "origem": "wikipedia",
   "pagina": "Clube Esportivo Operário Várzea-Grandense",
-  "arquivo_wiki": "Ficheiro:Operário_Varzea-grandense.png",
-  "arquivo": "escudos/operario-vg.png"
+  "arquivo_wiki": "Operário_Varzea-grandense.png",
+  "arquivo": "escudos/operario-vg.png",
+  "sha1": "8fc408ad5c85dab8d54964e1ef031281dc55ff4a",
+  "versao": 2
  },
  "União Rondonópolis": {
   "status": "duvida",
+  "origem": "wikipedia",
   "pagina": "União Esporte Clube",
-  "arquivo_wiki": "Ficheiro:UniãoRondonópolis.png",
-  "arquivo": "escudos/uniao-rondonopolis.png"
+  "arquivo_wiki": "UniãoRondonópolis.png",
+  "arquivo": "escudos/uniao-rondonopolis.png",
+  "sha1": "015d4c6fd1695c93b74426929bbdbfd120d6c881",
+  "versao": 2
  },
  "Goiatuba": {
-  "status": "faltando",
-  "motivo": "pagina nao encontrada"
+  "status": "ok",
+  "origem": "wikipedia",
+  "pagina": "Goiatuba Esporte Clube",
+  "arquivo_wiki": "Goiatuba_Esporte_Clube_logo.png",
+  "arquivo": "escudos/goiatuba.png",
+  "sha1": "d2bcb15d03b640659548ff6f79cae311c3ac429b",
+  "versao": 2
  },
  "Trem": {
-  "status": "faltando",
-  "motivo": "pagina nao encontrada"
+  "status": "duvida",
+  "origem": "wikipedia",
+  "pagina": "Trem Desportivo Clube",
+  "arquivo_wiki": "Trem_Desportivo_Clube_(2022).png",
+  "arquivo": "escudos/trem.png",
+  "sha1": "d7554cebbdd37514cc933a45d4e7072a8a8c13d4",
+  "versao": 2
  },
  "Oratório": {
-  "status": "faltando",
-  "motivo": "pagina nao encontrada"
+  "status": "duvida",
+  "origem": "wikipedia",
+  "pagina": "Oratório Recreativo Clube",
+  "arquivo_wiki": "OratórioAmapá.png",
+  "arquivo": "escudos/oratorio.png",
+  "sha1": "6e4891c61ff81cf45b1794409ef3b1613e7c5b31",
+  "versao": 2
  },
  "Tuna Luso": {
-  "status": "faltando",
-  "motivo": "pagina nao encontrada"
+  "status": "duvida",
+  "origem": "wikipedia",
+  "pagina": "Tuna Luso Brasileira",
+  "arquivo_wiki": "Tuna_Luso_1903.svg",
+  "arquivo": "escudos/tuna-luso.png",
+  "sha1": "27771695e479bda9ae9168ac1a8c5461cd01197c",
+  "versao": 2
  },
  "Águia de Marabá": {
   "status": "duvida",
+  "origem": "wikipedia",
   "pagina": "Águia de Marabá Futebol Clube",
-  "arquivo_wiki": "Ficheiro:Águia_de_Marabá.png",
-  "arquivo": "escudos/aguia-de-maraba.png"
+  "arquivo_wiki": "Águia_de_Marabá.png",
+  "arquivo": "escudos/aguia-de-maraba.png",
+  "sha1": "68dcd8a5c7a932ca2e97be1ac9b82788790bc174",
+  "versao": 2
  },
  "Tocantinópolis": {
   "status": "duvida",
+  "origem": "wikipedia",
   "pagina": "Tocantinópolis Esporte Clube",
-  "arquivo_wiki": "Ficheiro:Tocantinopolis_EC.svg",
-  "arquivo": "escudos/tocantinopolis.png"
+  "arquivo_wiki": "Tocantinopolis_EC.svg",
+  "arquivo": "escudos/tocantinopolis.png",
+  "sha1": "da200a905ef35e12f8aed24b5e514fd6a3d19858",
+  "versao": 2
  },
  "Imperatriz": {
   "status": "duvida",
+  "origem": "wikipedia",
   "pagina": "Sociedade Imperatriz de Desportos",
-  "arquivo_wiki": "Ficheiro:SImperatrizD.png",
-  "arquivo": "escudos/imperatriz.png"
+  "arquivo_wiki": "SImperatrizD.png",
+  "arquivo": "escudos/imperatriz.png",
+  "sha1": "62a25a728e3d06de7c075553a6ce31100aaa07f7",
+  "versao": 2
  },
  "Sampaio Corrêa": {
-  "status": "faltando",
-  "motivo": "pagina nao encontrada"
+  "status": "ok",
+  "origem": "wikipedia",
+  "pagina": "Sampaio Corrêa Futebol Clube",
+  "arquivo_wiki": "Sampaio_Correa_Futebol_Clube_logo.svg",
+  "arquivo": "escudos/sampaio-correa.png",
+  "sha1": "40efc9eb74fc317890c2458994bed2ed40ccec8d",
+  "versao": 2
  },
  "Moto Club": {
-  "status": "faltando",
-  "motivo": "pagina nao encontrada"
+  "status": "ok",
+  "origem": "wikipedia",
+  "pagina": "Moto Club",
+  "arquivo_wiki": "Moto_Club_logo.png",
+  "arquivo": "escudos/moto-club.png",
+  "sha1": "fd779e40bce21cb6bdeb92ce0646d2302dde4146",
+  "versao": 2
  },
  "IAPE": {
   "status": "faltando",
-  "motivo": "pagina nao encontrada"
+  "motivo": "nao encontrado em nenhuma fonte",
+  "versao": 2
  },
  "Maracanã": {
-  "status": "faltando",
-  "motivo": "pagina nao encontrada"
+  "status": "duvida",
+  "origem": "wikipedia",
+  "pagina": "Maracanã Esporte Clube",
+  "arquivo_wiki": "Maracanã_Esporte_Clube.png",
+  "arquivo": "escudos/maracana.png",
+  "sha1": "99fc9dba01e4b79f351db84f3458e0b0a36c1618",
+  "versao": 2
  },
  "Iguatu": {
-  "status": "faltando",
-  "motivo": "pagina nao encontrada"
+  "status": "duvida",
+  "origem": "wikipedia",
+  "pagina": "Associação Desportiva Iguatu",
+  "arquivo_wiki": "Associação_Desportiva_Iguatu.png",
+  "arquivo": "escudos/iguatu.png",
+  "sha1": "5dc86b26f5cda58ca7e3d9ee901701c4f00955c2",
+  "versao": 2
  },
  "Parnahyba": {
   "status": "duvida",
+  "origem": "wikipedia",
   "pagina": "Parnahyba Sport Club",
-  "arquivo_wiki": "Ficheiro:ParnahybaSportClub.png",
-  "arquivo": "escudos/parnahyba.png"
+  "arquivo_wiki": "ParnahybaSportClub.png",
+  "arquivo": "escudos/parnahyba.png",
+  "sha1": "e91037f907891f7c049930c58b0139ab5a3fc749",
+  "versao": 2
  },
  "Ferroviário": {
   "status": "ok",
+  "origem": "wikipedia",
   "pagina": "Ferroviário Atlético Clube (Ceará)",
-  "arquivo_wiki": "Ficheiro:Escudo_do_Ferroviário_Atlético_Clube.png",
-  "arquivo": "escudos/ferroviario.png"
+  "arquivo_wiki": "Escudo_do_Ferroviário_Atlético_Clube.png",
+  "arquivo": "escudos/ferroviario.png",
+  "sha1": "35d697d0d2b157d3d2e89f3748597f8d7ea79489",
+  "versao": 2
  },
  "Tirol": {
-  "status": "ok",
+  "status": "duvida",
+  "origem": "wikipedia",
   "pagina": "Centro de Formação de Atletas do Tirol",
-  "arquivo_wiki": "Ficheiro:Logo Grêmio Pague Menos.png",
-  "arquivo": "escudos/tirol.png"
+  "arquivo_wiki": "Logo_Grêmio_Pague_Menos.png",
+  "arquivo": "escudos/tirol.png",
+  "sha1": "7765f468ce32338c03ad39539c0edb8a2ced7626",
+  "versao": 2
  },
  "Atlético-CE": {
-  "status": "duvida",
-  "pagina": "Ferroviário Atlético Clube (Ceará)",
-  "arquivo_wiki": "Ficheiro:Escudo do Ferroviário Atlético Clube.png",
-  "arquivo": "escudos/atletico-ce.png"
+  "status": "faltando",
+  "motivo": "nao encontrado em nenhuma fonte",
+  "versao": 2
  },
  "Altos": {
   "status": "duvida",
+  "origem": "wikipedia",
   "pagina": "Associação Atlética de Altos",
-  "arquivo_wiki": "Ficheiro:Associação_Atlética_de_Altos.png",
-  "arquivo": "escudos/altos.png"
+  "arquivo_wiki": "Associação_Atlética_de_Altos.png",
+  "arquivo": "escudos/altos.png",
+  "sha1": "335b30e0a2238a614098dd01aa33650aad3da69c",
+  "versao": 2
  },
  "Piauí": {
-  "status": "faltando",
-  "motivo": "pagina nao encontrada"
+  "status": "duvida",
+  "origem": "wikipedia",
+  "pagina": "Piauí Esporte Clube",
+  "arquivo_wiki": "PiauiEC.png",
+  "arquivo": "escudos/piaui.png",
+  "sha1": "762ac5637ceea97fd470a90d60955a5ef54912b6",
+  "versao": 2
  },
  "Fluminense-PI": {
-  "status": "faltando",
-  "motivo": "pagina nao encontrada"
+  "status": "duvida",
+  "origem": "wikipedia",
+  "pagina": "Fluminense Esporte Clube",
+  "arquivo_wiki": "FluminenseECpiaui.png",
+  "arquivo": "escudos/fluminense-pi.png",
+  "sha1": "66f6693a3bda8f76e17ec5901e1dd13ae410d25f",
+  "versao": 2
  },
  "ABC": {
-  "status": "faltando",
-  "motivo": "pagina nao encontrada"
+  "status": "duvida",
+  "origem": "wikipedia",
+  "pagina": "ABC Futebol Clube",
+  "arquivo_wiki": "ABC_FC_(E)_-_RN.svg",
+  "arquivo": "escudos/abc.png",
+  "sha1": "090291ddae2fe3e1b61a68296a8df8e1135d80c5",
+  "versao": 2
  },
  "América-RN": {
-  "status": "faltando",
-  "motivo": "pagina nao encontrada"
+  "status": "ok",
+  "origem": "wikipedia",
+  "pagina": "América Futebol Clube (Rio Grande do Norte)",
+  "arquivo_wiki": "América_Futebol_Clube_(Natal,_Rio_Grande_do_Norte)_logo.svg",
+  "arquivo": "escudos/america-rn.png",
+  "sha1": "58eb86a37919e7fe5f4c0f6b460864b688592b04",
+  "versao": 2
  },
  "Laguna": {
-  "status": "faltando",
-  "motivo": "pagina nao encontrada"
+  "status": "ok",
+  "origem": "wikipedia",
+  "pagina": "Clube Laguna SAF",
+  "arquivo_wiki": "Laguna_-_Simbolo_azul_2024.svg",
+  "arquivo": "escudos/laguna.png",
+  "sha1": "5c6ae9f2fa49804622079be73546def6f833cc48",
+  "versao": 2
  },
  "Sousa": {
-  "status": "duvida",
-  "pagina": "Sousa Esporte Clube",
-  "arquivo_wiki": "Ficheiro:Soccerball mask.svg",
-  "arquivo": "escudos/sousa.png"
+  "status": "faltando",
+  "motivo": "nao encontrado em nenhuma fonte",
+  "versao": 2
  },
  "Maguary": {
-  "status": "duvida",
-  "pagina": "Associação Atlética Maguary",
-  "arquivo_wiki": "Ficheiro:AA_Maguari.jpg",
-  "arquivo": "escudos/maguary.png"
+  "status": "faltando",
+  "motivo": "nao encontrado em nenhuma fonte",
+  "versao": 2
  },
  "Central": {
   "status": "duvida",
+  "origem": "wikipedia",
   "pagina": "Central Sport Club",
-  "arquivo_wiki": "Ficheiro:CentralSC.png",
-  "arquivo": "escudos/central.png"
+  "arquivo_wiki": "CentralSC.png",
+  "arquivo": "escudos/central.png",
+  "sha1": "d426054cefbbc7e486e8d66dcab20d651bd522ac",
+  "versao": 2
  },
  "Retrô": {
-  "status": "faltando",
-  "motivo": "pagina nao encontrada"
+  "status": "duvida",
+  "origem": "wikipedia",
+  "pagina": "Retrô Futebol Clube Brasil",
+  "arquivo_wiki": "Retrô_FC_Brasil-PE_(BRA).png",
+  "arquivo": "escudos/retro.png",
+  "sha1": "c0e7dc61fcd12b2eb04d0f66dd93f79359a984f7",
+  "versao": 2
  },
  "Decisão": {
-  "status": "faltando",
-  "motivo": "pagina nao encontrada"
+  "status": "duvida",
+  "origem": "wikipedia",
+  "pagina": "Decisão Goiana Futebol Clube",
+  "arquivo_wiki": "Ficheiro:Escudo do Decisão Sertânia.png",
+  "arquivo": "escudos/decisao.png",
+  "sha1": "97d0eae05a0874d7580262ddd0c5ddd7a090a0ca",
+  "versao": 2
  },
  "Serra Branca": {
-  "status": "faltando",
-  "motivo": "pagina nao encontrada"
+  "status": "ok",
+  "origem": "wikipedia",
+  "pagina": "Serra Futebol Clube",
+  "arquivo_wiki": "Escudo_do_Serra_-_2017_PNG.png",
+  "arquivo": "escudos/serra-branca.png",
+  "sha1": "243bf1fa00742e92f3d46ee73f9f949c8506d912",
+  "versao": 2
  },
  "Treze": {
-  "status": "faltando",
-  "motivo": "pagina nao encontrada"
+  "status": "ok",
+  "origem": "wikipedia",
+  "pagina": "Treze Futebol Clube",
+  "arquivo_wiki": "Treze_Futebol_Clube_logo.svg",
+  "arquivo": "escudos/treze.png",
+  "sha1": "1408fe582d52888341ac9c5feb60f33072eb0c4b",
+  "versao": 2
  },
  "Lagarto": {
   "status": "duvida",
+  "origem": "wikipedia",
   "pagina": "Lagarto Futebol Clube",
-  "arquivo_wiki": "Ficheiro:LagartoFC.png",
-  "arquivo": "escudos/lagarto.png"
+  "arquivo_wiki": "LagartoFC.png",
+  "arquivo": "escudos/lagarto.png",
+  "sha1": "4fefbe603705a5c27cd2add601a05212c1d54082",
+  "versao": 2
  },
  "Sergipe": {
-  "status": "faltando",
-  "pagina": "Aracaju",
-  "motivo": "sem imagem de escudo"
+  "status": "duvida",
+  "origem": "wikipedia",
+  "pagina": "Club Sportivo Sergipe",
+  "arquivo_wiki": "CSSergipe.png",
+  "arquivo": "escudos/sergipe.png",
+  "sha1": "6a57e51a22e1fdeb09a97fa0b38fc32d69fbeda8",
+  "versao": 2
  },
  "ASA": {
-  "status": "ok",
-  "pagina": "Agremiação Sportiva Arapiraquense",
-  "arquivo_wiki": "Ficheiro:Escudo ASA.png",
-  "arquivo": "escudos/asa.png"
+  "status": "faltando",
+  "motivo": "nao encontrado em nenhuma fonte",
+  "versao": 2
  },
  "CSA": {
   "status": "faltando",
-  "pagina": "Centro Sportivo Alagoano",
-  "motivo": "sem imagem de escudo"
+  "motivo": "nao encontrado em nenhuma fonte",
+  "versao": 2
  },
  "CSE": {
-  "status": "ok",
-  "pagina": "Clube Sociedade Esportiva",
-  "arquivo_wiki": "Ficheiro:CSE logo.svg",
-  "arquivo": "escudos/cse.png"
+  "status": "faltando",
+  "motivo": "nao encontrado em nenhuma fonte",
+  "versao": 2
  },
  "Jacuipense": {
-  "status": "faltando",
+  "status": "duvida",
+  "origem": "wikipedia",
   "pagina": "Esporte Clube Jacuipense",
-  "motivo": "sem imagem de escudo"
+  "arquivo_wiki": "ECJacuipense.png",
+  "arquivo": "escudos/jacuipense.png",
+  "sha1": "9933c2be0d01ae970416687d4963505865813fc8",
+  "versao": 2
  },
  "Atlético-BA": {
   "status": "faltando",
-  "motivo": "pagina nao encontrada"
+  "motivo": "nao encontrado em nenhuma fonte",
+  "versao": 2
  },
  "Juazeirense": {
   "status": "duvida",
+  "origem": "wikipedia",
   "pagina": "Sociedade Desportiva Juazeirense",
-  "arquivo_wiki": "Ficheiro:Sociedade_Desportiva_Juazeirense_2026.png",
-  "arquivo": "escudos/juazeirense.png"
+  "arquivo_wiki": "Sociedade_Desportiva_Juazeirense_2026.png",
+  "arquivo": "escudos/juazeirense.png",
+  "sha1": "f624a6c556e9f6cf95bec1745e304b4126afbdff",
+  "versao": 2
  },
  "Uberlândia": {
-  "status": "duvida",
-  "pagina": "Uberlândia",
-  "arquivo_wiki": "Ficheiro:CentrosulUdi2.jpg",
-  "arquivo": "escudos/uberlandia.png"
+  "status": "ok",
+  "origem": "wikipedia",
+  "pagina": "Uberlândia Esporte Clube",
+  "arquivo_wiki": "Uberlândia_Esporte_Clube_logo.svg",
+  "arquivo": "escudos/uberlandia.png",
+  "sha1": "d13bd362755d1526c7b06c49d22ff74b41eb3b13",
+  "versao": 2
  },
  "Betim": {
   "status": "ok",
+  "origem": "wikipedia",
   "pagina": "Betim Futebol",
-  "arquivo_wiki": "Ficheiro:Logo Betim Futebol.png",
-  "arquivo": "escudos/betim.png"
+  "arquivo_wiki": "Logo_Betim_Futebol.png",
+  "arquivo": "escudos/betim.png",
+  "sha1": "32845bc98829a191dc4d71d7cffdb8b5f08455b5",
+  "versao": 2
  },
  "CRAC": {
-  "status": "duvida",
-  "pagina": "Campeonato Brasileiro de Futebol de 2013 - Série C",
-  "arquivo_wiki": "Ficheiro:Flag_of_Brazil.svg",
-  "arquivo": "escudos/crac.png"
+  "status": "faltando",
+  "motivo": "nao encontrado em nenhuma fonte",
+  "versao": 2
  },
  "ABECAT": {
-  "status": "ok",
-  "pagina": "Agro Esporte Clube",
-  "arquivo_wiki": "Ficheiro:ABECAT Ouvidorense (Logo 2025).svg",
-  "arquivo": "escudos/abecat.png"
+  "status": "faltando",
+  "motivo": "nao encontrado em nenhuma fonte",
+  "versao": 2
  },
  "Operário-MS": {
-  "status": "faltando",
-  "motivo": "pagina nao encontrada"
+  "status": "duvida",
+  "origem": "wikipedia",
+  "pagina": "Operário Futebol Clube",
+  "arquivo_wiki": "Operario_FC_MS.svg",
+  "arquivo": "escudos/operario-ms.png",
+  "sha1": "b540c8a433a8fa3219addd4cc489c139517eae4b",
+  "versao": 2
  },
  "Ivinhema": {
-  "status": "faltando",
-  "motivo": "pagina nao encontrada"
+  "status": "duvida",
+  "origem": "wikipedia",
+  "pagina": "Ivinhema Futebol Clube",
+  "arquivo_wiki": "IvinhemaFC.png",
+  "arquivo": "escudos/ivinhema.png",
+  "sha1": "fb387073d701614e59284537915799968e0dafb2",
+  "versao": 2
  },
  "Porto-BA": {
   "status": "faltando",
-  "motivo": "pagina nao encontrada"
+  "motivo": "nao encontrado em nenhuma fonte",
+  "versao": 2
  },
  "Rio Branco-ES": {
-  "status": "faltando",
-  "motivo": "pagina nao encontrada"
+  "status": "duvida",
+  "origem": "wikipedia",
+  "pagina": "Rio Branco Futebol Clube",
+  "arquivo_wiki": "Rio-branco-futebol-clube-de-venda-nova-es.png",
+  "arquivo": "escudos/rio-branco-es.png",
+  "sha1": "1099fae99895a7844f5c5e4a36dab7e727b262af",
+  "versao": 2
  },
  "Vitória-ES": {
-  "status": "faltando",
-  "motivo": "pagina nao encontrada"
+  "status": "duvida",
+  "origem": "wikipedia",
+  "pagina": "Vitória Futebol Clube (Brasil)",
+  "arquivo_wiki": "VitóriaFCES.png",
+  "arquivo": "escudos/vitoria-es.png",
+  "sha1": "47f79544c8e3d25f25b1ccb7aa821f7114602ee1",
+  "versao": 2
  },
  "Real Noroeste": {
   "status": "duvida",
+  "origem": "wikipedia",
   "pagina": "Real Noroeste Capixaba Futebol Clube",
-  "arquivo_wiki": "Ficheiro:RealNoroesteCFC.png",
-  "arquivo": "escudos/real-noroeste.png"
+  "arquivo_wiki": "RealNoroesteCFC.png",
+  "arquivo": "escudos/real-noroeste.png",
+  "sha1": "2ac384e51929dea4f3873a5a8d21ca6b686ac2bc",
+  "versao": 2
  },
  "Tombense": {
   "status": "duvida",
+  "origem": "wikipedia",
   "pagina": "Tombense Futebol Clube",
-  "arquivo_wiki": "Ficheiro:TombenseFC.png",
-  "arquivo": "escudos/tombense.png"
+  "arquivo_wiki": "TombenseFC.png",
+  "arquivo": "escudos/tombense.png",
+  "sha1": "f9679e96a47ea4be0b552e81906420592baa9e43",
+  "versao": 2
  },
  "Democrata GV": {
   "status": "ok",
+  "origem": "wikipedia",
   "pagina": "Esporte Clube Democrata",
-  "arquivo_wiki": "Ficheiro:Esporte Clube Democrata logo.svg",
-  "arquivo": "escudos/democrata-gv.png"
+  "arquivo_wiki": "Esporte_Clube_Democrata_logo.svg",
+  "arquivo": "escudos/democrata-gv.png",
+  "sha1": "b2dc74b13a677f704f25a37349976a3501b9a605",
+  "versao": 2
  },
  "Madureira": {
   "status": "duvida",
-  "pagina": "Madureira (Rio de Janeiro)",
-  "arquivo_wiki": "Ficheiro:Commons-logo.svg",
-  "arquivo": "escudos/madureira.png"
+  "origem": "wikipedia",
+  "pagina": "Madureira Esporte Clube",
+  "arquivo_wiki": "Madureira_EC_(RJ).svg",
+  "arquivo": "escudos/madureira.png",
+  "sha1": "0af99c81a60c93d2d79d2a66490a24a18e0d686d",
+  "versao": 2
  },
  "Portuguesa-RJ": {
-  "status": "ok",
-  "pagina": "America Football Club (Rio de Janeiro)",
-  "arquivo_wiki": "Ficheiro:America Football Club (Rio de Janeiro, Brazil) logo.svg",
-  "arquivo": "escudos/portuguesa-rj.png"
+  "status": "duvida",
+  "origem": "wikipedia",
+  "pagina": "Associação Atlética Portuguesa (Rio de Janeiro)",
+  "arquivo_wiki": "Associação_Atlética_Portuguesa-RJ.png",
+  "arquivo": "escudos/portuguesa-rj.png",
+  "sha1": "708d57f43b376394fee4347d3bb3504c8090ca79",
+  "versao": 2
  },
  "America-RJ": {
-  "status": "faltando",
+  "status": "ok",
+  "origem": "wikipedia",
   "pagina": "America Football Club (Rio de Janeiro)",
-  "motivo": "sem imagem de escudo"
+  "arquivo_wiki": "America_Football_Club_(Rio_de_Janeiro,_Brazil)_logo.svg",
+  "arquivo": "escudos/america-rj.png",
+  "sha1": "0d0900510ed0a4f2abe38f65420421fbf0a2fcbe",
+  "versao": 2
  },
  "Portuguesa": {
-  "status": "ok",
-  "pagina": "São Paulo Futebol Clube",
-  "arquivo_wiki": "Ficheiro:Commons-logo.svg",
-  "arquivo": "escudos/portuguesa.png"
+  "status": "faltando",
+  "motivo": "nao encontrado em nenhuma fonte",
+  "versao": 2
  },
  "Água Santa": {
-  "status": "faltando",
+  "status": "duvida",
+  "origem": "wikipedia",
   "pagina": "Esporte Clube Água Santa",
-  "motivo": "sem imagem de escudo"
+  "arquivo_wiki": "Ecaguasanta.png",
+  "arquivo": "escudos/agua-santa.png",
+  "sha1": "6fd043402b27b42924fcbd6c93d4b45ee4bfc826",
+  "versao": 2
  },
  "Pouso Alegre": {
-  "status": "faltando",
-  "motivo": "pagina nao encontrada"
+  "status": "duvida",
+  "origem": "wikipedia",
+  "pagina": "Pouso Alegre Futebol Clube",
+  "arquivo_wiki": "Pouso_Alegre_Futebol_Clube.png",
+  "arquivo": "escudos/pouso-alegre.png",
+  "sha1": "cbda7e6e7d244c8e83f7aa285ee88abb0163fad4",
+  "versao": 2
  },
  "Nova Iguaçu": {
-  "status": "ok",
-  "pagina": "Nova Iguaçu",
-  "arquivo_wiki": "Ficheiro:Wikidata-logo.svg",
-  "arquivo": "escudos/nova-iguacu.png"
+  "status": "duvida",
+  "origem": "wikipedia",
+  "pagina": "Nova Iguaçu Futebol Clube",
+  "arquivo_wiki": "NovaIguacuFC.png",
+  "arquivo": "escudos/nova-iguacu.png",
+  "sha1": "705a4d7040a83b69f1ae77116c33e6e44de2bbbe",
+  "versao": 2
  },
  "Sampaio Corrêa-RJ": {
-  "status": "faltando",
+  "status": "ok",
+  "origem": "wikipedia",
   "pagina": "Sampaio Corrêa Futebol e Esporte",
-  "motivo": "sem imagem de escudo"
+  "arquivo_wiki": "Sampaio_Corrêa-RJ_logo.png",
+  "arquivo": "escudos/sampaio-correa-rj.png",
+  "sha1": "0c5e16cfaffcb3fe453df5479571903bf3788ac9",
+  "versao": 2
  },
  "Maricá": {
-  "status": "ok",
+  "status": "duvida",
+  "origem": "wikipedia",
   "pagina": "Maricá Futebol Clube",
-  "arquivo_wiki": "Ficheiro:Commons-logo.svg",
-  "arquivo": "escudos/marica.png"
+  "arquivo_wiki": "Ficheiro:Maricá Futebol Clube logo.png",
+  "arquivo": "escudos/marica.png",
+  "sha1": "a86cd4fa1bd3fab9a0921c2de12b2ef5478dfc45",
+  "versao": 2
  },
  "XV de Piracicaba": {
-  "status": "faltando",
+  "status": "ok",
+  "origem": "wikipedia",
   "pagina": "Esporte Clube XV de Novembro (Piracicaba)",
-  "motivo": "sem imagem de escudo"
+  "arquivo_wiki": "Esporte_Clube_XV_de_Novembro_de_Piracicaba_logo.svg",
+  "arquivo": "escudos/xv-de-piracicaba.png",
+  "sha1": "2a4c1cc4833d4db460c53477920929f0c4a02628",
+  "versao": 2
  },
  "Noroeste": {
-  "status": "faltando",
-  "motivo": "pagina nao encontrada"
+  "status": "duvida",
+  "origem": "wikipedia",
+  "pagina": "Esporte Clube Noroeste",
+  "arquivo_wiki": "Esporte_Clube_Noroeste.svg",
+  "arquivo": "escudos/noroeste.png",
+  "sha1": "67605c8b656e3874fd462b14305d9a5f7a766ac8",
+  "versao": 2
  },
  "Velo Clube": {
-  "status": "faltando",
-  "motivo": "pagina nao encontrada"
+  "status": "ok",
+  "origem": "wikipedia",
+  "pagina": "Associação Esportiva Velo Clube Rioclarense",
+  "arquivo_wiki": "Escudo_Oficial_da_Associação_Esportiva_Velo_Clube_Rioclarense.svg",
+  "arquivo": "escudos/velo-clube.png",
+  "sha1": "4ebe140c96d024f93bf5d954d92a82a19e3e2f85",
+  "versao": 2
  },
  "Cianorte": {
   "status": "duvida",
+  "origem": "wikipedia",
   "pagina": "Cianorte Futebol Clube",
-  "arquivo_wiki": "Ficheiro:Cianorte.png",
-  "arquivo": "escudos/cianorte.png"
+  "arquivo_wiki": "Cianorte.png",
+  "arquivo": "escudos/cianorte.png",
+  "sha1": "32fe9b13fb2e11824d970745f57e5f54243e3a8a",
+  "versao": 2
  },
  "FC Cascavel": {
   "status": "duvida",
+  "origem": "wikipedia",
   "pagina": "Futebol Clube Cascavel",
-  "arquivo_wiki": "Ficheiro:FC_Cascavel.png",
-  "arquivo": "escudos/fc-cascavel.png"
+  "arquivo_wiki": "FC_Cascavel.png",
+  "arquivo": "escudos/fc-cascavel.png",
+  "sha1": "5f2b4ceae135e9d2f1ea14dbacf8ff4f79a97f8f",
+  "versao": 2
  },
  "Santa Catarina": {
   "status": "ok",
+  "origem": "wikipedia",
   "pagina": "Santa Catarina Clube",
-  "arquivo_wiki": "Ficheiro:Santa Catarina Clube logo.png",
-  "arquivo": "escudos/santa-catarina.png"
+  "arquivo_wiki": "Santa_Catarina_Clube_logo.png",
+  "arquivo": "escudos/santa-catarina.png",
+  "sha1": "08cdc580bb8e9d2c28bb20edc9dc343df2eaf870",
+  "versao": 2
  },
  "Joinville": {
   "status": "duvida",
+  "origem": "wikipedia",
   "pagina": "Joinville Esporte Clube",
-  "arquivo_wiki": "Ficheiro:Joinville-SC.png",
-  "arquivo": "escudos/joinville.png"
+  "arquivo_wiki": "Joinville-SC.png",
+  "arquivo": "escudos/joinville.png",
+  "sha1": "3cb558c495b8ddd3e9e64f1905600d5b1d76573f",
+  "versao": 2
  },
  "Guarany de Bagé": {
-  "status": "faltando",
+  "status": "duvida",
+  "origem": "wikipedia",
   "pagina": "Guarany Futebol Clube",
-  "arquivo_wiki": "Ficheiro:Guarany_Futebol_Clube.svg",
-  "motivo": "sem url da imagem"
+  "arquivo_wiki": "Guarany_Futebol_Clube.svg",
+  "arquivo": "escudos/guarany-de-bage.png",
+  "sha1": "592b77537f753782df506a30621d37c482dfab9e",
+  "versao": 2
  },
  "São Luiz": {
-  "status": "faltando",
-  "motivo": "pagina nao encontrada"
+  "status": "duvida",
+  "origem": "wikipedia",
+  "pagina": "Esporte Clube São Luiz",
+  "arquivo_wiki": "SÃO-LUIZ.png",
+  "arquivo": "escudos/sao-luiz.png",
+  "sha1": "95ce5996b97ab3f0dde430f77d99bffc5a955cdb",
+  "versao": 2
  },
  "Blumenau": {
-  "status": "faltando",
-  "motivo": "pagina nao encontrada"
+  "status": "duvida",
+  "origem": "wikipedia",
+  "pagina": "Blumenau Esporte Clube",
+  "arquivo_wiki": "EscudoBlumenauEC.svg",
+  "arquivo": "escudos/blumenau.png",
+  "sha1": "e93d6368d2b941b6a2f042f0065ce1d187eb3bef",
+  "versao": 2
  },
  "Marcílio Dias": {
-  "status": "faltando",
-  "motivo": "pagina nao encontrada"
+  "status": "duvida",
+  "origem": "wikipedia",
+  "pagina": "Clube Náutico Marcílio Dias",
+  "arquivo_wiki": "Clube_Náutico_Marcílio_Dias.png",
+  "arquivo": "escudos/marcilio-dias.png",
+  "sha1": "905b3be32f071725417309ad30c522bf4b35b60f",
+  "versao": 2
  },
  "São Joseense": {
-  "status": "faltando",
-  "motivo": "pagina nao encontrada"
+  "status": "ok",
+  "origem": "wikipedia",
+  "pagina": "Independente Futebol São Joseense",
+  "arquivo_wiki": "São_Joseense_2021_logo.png",
+  "arquivo": "escudos/sao-joseense.png",
+  "sha1": "0fab6c26406ad0dfef5a26414f253d580076d6a0",
+  "versao": 2
  },
  "Azuriz": {
   "status": "duvida",
+  "origem": "wikipedia",
   "pagina": "Azuriz Futebol Clube",
-  "arquivo_wiki": "Ficheiro:Azuriz_FC.png",
-  "arquivo": "escudos/azuriz.png"
+  "arquivo_wiki": "Azuriz_FC.png",
+  "arquivo": "escudos/azuriz.png",
+  "sha1": "40121d9661b399ec9c290d195c148f038f52f1fd",
+  "versao": 2
  },
  "São José-RS": {
   "status": "ok",
-  "pagina": "Sport Club Internacional",
-  "arquivo_wiki": "Ficheiro:Sport_Club_Internacional_logo.svg",
-  "arquivo": "escudos/sao-jose-rs.png"
+  "origem": "wikipedia",
+  "pagina": "Esporte Clube São José",
+  "arquivo_wiki": "Esporte_Clube_São_José_logo.png",
+  "arquivo": "escudos/sao-jose-rs.png",
+  "sha1": "beb0b1d9d5256d5d2f6520b338051cf87ca42f0e",
+  "versao": 2
  },
  "Brasil de Pelotas": {
-  "status": "ok",
+  "status": "duvida",
+  "origem": "wikipedia",
   "pagina": "Esporte Clube Pelotas",
-  "arquivo_wiki": "Ficheiro:Brasão de Pelotas.svg",
-  "arquivo": "escudos/brasil-de-pelotas.png"
+  "arquivo_wiki": "Esporte_Clube_Pelotas.svg",
+  "arquivo": "escudos/brasil-de-pelotas.png",
+  "sha1": "c5e1cc660c54854641ce15cd8bb1d6d9f6d95eed",
+  "versao": 2
  }
 }
