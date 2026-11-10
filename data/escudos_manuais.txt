@@ -1,0 +1,105 @@
+# ESCUDOS MANUAIS - cole o endereco depois do sinal "=" e salve (commit).
+#
+# O QUE COLAR (qualquer um destes serve):
+#   1) O link da IMAGEM: na pagina do clube, clique com o botao direito no escudo e
+#      escolha "Copiar endereco da imagem". Exemplo:
+#        Atlético-GO = https://upload.wikimedia.org/wikipedia/.../512px-Escudo.svg.png
+#   2) O link da pagina do ARQUIVO (clique no escudo e copie o endereco da barra):
+#        CRB = https://pt.wikipedia.org/wiki/Ficheiro:CRB_logo.svg
+#   3) O titulo da PAGINA do clube (usa a imagem principal da pagina):
+#        Sousa = pagina:Sousa Esporte Clube
+#
+# Depois: Actions > Executar etapa > escudos. A nuvem baixa, converte e nomeia sozinha.
+# Linhas que comecam com # sao ignoradas. Deixe em branco o que nao quiser mudar.
+#
+# ---------------------------------------------------------------- FALTANDO
+
+# Atlético-GO (Goiânia/GO)  busca: https://pt.wikipedia.org/w/index.php?search=Atl%C3%A9tico%20GO%20Goi%C3%A2nia%20GO%20clube%20de%20futebol
+Atlético-GO = https://pt.wikipedia.org/wiki/Ficheiro:Atl%C3%A9tico_Goianiense_logo_(sem_estrelas).png
+
+# CRB (Maceió/AL)  busca: https://pt.wikipedia.org/w/index.php?search=CRB%20Macei%C3%B3%20AL%20clube%20de%20futebol
+CRB = https://pt.wikipedia.org/wiki/Ficheiro:Clube_de_Regatas_Brasil_logo.svg
+
+# GAS (Boa Vista/RR)  busca: https://pt.wikipedia.org/w/index.php?search=GAS%20Boa%20Vista%20RR%20clube%20de%20futebol
+GAS = https://pt.wikipedia.org/wiki/Ficheiro:GASampaio_(1).png
+
+# IAPE (São Luís/MA)  busca: https://pt.wikipedia.org/w/index.php?search=IAPE%20S%C3%A3o%20Lu%C3%ADs%20MA%20clube%20de%20futebol
+IAPE = https://pt.wikipedia.org/wiki/Ficheiro:IAPEfc.png
+
+# Atlético-CE (Fortaleza/CE)  busca: https://pt.wikipedia.org/w/index.php?search=Atl%C3%A9tico%20CE%20Fortaleza%20CE%20clube%20de%20futebol
+Atlético-CE = https://pt.wikipedia.org/wiki/Ficheiro:FCAtl%C3%A9ticoCearense.png
+
+# Sousa (Sousa/PB)  busca: https://pt.wikipedia.org/w/index.php?search=Sousa%20Sousa%20PB%20clube%20de%20futebol
+Sousa = https://pt.wikipedia.org/wiki/Ficheiro:SousaEC.png
+
+# Maguary (Bonito/PE)  busca: https://pt.wikipedia.org/w/index.php?search=Maguary%20Bonito%20PE%20clube%20de%20futebol
+Maguary = https://pt.wikipedia.org/wiki/Ficheiro:AA_Maguari.jpg
+
+# ASA (Arapiraca/AL)  busca: https://pt.wikipedia.org/w/index.php?search=ASA%20Arapiraca%20AL%20clube%20de%20futebol
+ASA = https://pt.wikipedia.org/wiki/Ficheiro:Escudo_ASA.png
+
+# CSA (Maceió/AL)  busca: https://pt.wikipedia.org/w/index.php?search=CSA%20Macei%C3%B3%20AL%20clube%20de%20futebol
+CSA = https://pt.wikipedia.org/wiki/Ficheiro:Centro_Sportivo_Alagoano_logo.png
+
+# CSE (Palmeira dos Índios/AL)  busca: https://pt.wikipedia.org/w/index.php?search=CSE%20Palmeira%20dos%20%C3%8Dndios%20AL%20clube%20de%20futebol
+CSE = https://pt.wikipedia.org/wiki/Ficheiro:CSE_logo.svg
+
+# Atlético-BA (Alagoinhas/BA)  busca: https://pt.wikipedia.org/w/index.php?search=Atl%C3%A9tico%20BA%20Alagoinhas%20BA%20clube%20de%20futebol
+Atlético-BA = https://pt.wikipedia.org/wiki/Ficheiro:AA_Alagoinhas_-_BA.svg
+
+# CRAC (Catalão/GO)  busca: https://pt.wikipedia.org/w/index.php?search=CRAC%20Catal%C3%A3o%20GO%20clube%20de%20futebol
+CRAC = https://pt.wikipedia.org/wiki/Ficheiro:Escudo_do_Clube_Recreativo_e_Atl%C3%A9tico_Catalano_(CRAC).svg
+
+# ABECAT (Ouvidor/GO)  busca: https://pt.wikipedia.org/w/index.php?search=ABECAT%20Ouvidor%20GO%20clube%20de%20futebol
+ABECAT = https://pt.wikipedia.org/wiki/Ficheiro:ABECAT_Ouvidorense_(Logo_2025).svg
+
+# Porto-BA (Porto Seguro/BA)  busca: https://pt.wikipedia.org/w/index.php?search=Porto%20BA%20Porto%20Seguro%20BA%20clube%20de%20futebol
+Porto-BA = https://pt.wikipedia.org/wiki/Ficheiro:Porto_SC_(Bahia)_escudo.png
+
+# Portuguesa (São Paulo/SP)  busca: https://pt.wikipedia.org/w/index.php?search=Portuguesa%20S%C3%A3o%20Paulo%20SP%20clube%20de%20futebol
+Portuguesa = https://pt.wikipedia.org/wiki/Ficheiro:Associa%C3%A7%C3%A3o_Portuguesa_de_Desportos.svg
+
+# ---------------------------------------------------------------- PROVAVELMENTE ERRADOS
+# (confirme no painel antes de preencher)
+
+# Atlético-MG (Belo Horizonte/MG)  busca: https://pt.wikipedia.org/w/index.php?search=Atl%C3%A9tico%20MG%20Belo%20Horizonte%20MG%20clube%20de%20futebol
+Atlético-MG = https://pt.wikipedia.org/wiki/Ficheiro:Clube_Atl%C3%A9tico_Mineiro_logo.svg
+
+# Botafogo (Rio de Janeiro/RJ)  busca: https://pt.wikipedia.org/w/index.php?search=Botafogo%20Rio%20de%20Janeiro%20RJ%20clube%20de%20futebol
+Botafogo = https://pt.wikipedia.org/wiki/Ficheiro:Botafogo_de_Futebol_e_Regatas_logo.svg
+
+# Vasco (Rio de Janeiro/RJ)  busca: https://pt.wikipedia.org/w/index.php?search=Vasco%20Rio%20de%20Janeiro%20RJ%20clube%20de%20futebol
+Vasco = https://pt.wikipedia.org/wiki/Ficheiro:EscudoDoVascoDaGama.svg
+
+# Vitória (Salvador/BA)  busca: https://pt.wikipedia.org/w/index.php?search=Vit%C3%B3ria%20Salvador%20BA%20clube%20de%20futebol
+Vitória = https://pt.wikipedia.org/wiki/Ficheiro:Esporte_Clube_Vit%C3%B3ria_(2024).svg
+
+# Ceará (Fortaleza/CE)  busca: https://pt.wikipedia.org/w/index.php?search=Cear%C3%A1%20Fortaleza%20CE%20clube%20de%20futebol
+Ceará = https://pt.wikipedia.org/wiki/Ficheiro:Cear%C3%A1_Sporting_Club_logo.svg
+
+# Inter de Limeira (Limeira/SP)  busca: https://pt.wikipedia.org/w/index.php?search=Inter%20de%20Limeira%20Limeira%20SP%20clube%20de%20futebol
+Inter de Limeira = https://pt.wikipedia.org/wiki/Ficheiro:Inter_de_Limeira.svg
+
+# Independência (Rio Branco/AC)  busca: https://pt.wikipedia.org/w/index.php?search=Independ%C3%AAncia%20Rio%20Branco%20AC%20clube%20de%20futebol
+Independência = https://pt.wikipedia.org/wiki/Ficheiro:Escudoindependenciafc.png
+
+# ---------------------------------------------------------------- CONFERIR
+# (os 6 abaixo estao LIGADOS: para manter o escudo atual de algum, ponha # no comeco da linha dele)
+
+# Palmeiras (São Paulo/SP)  busca: https://pt.wikipedia.org/w/index.php?search=Palmeiras%20S%C3%A3o%20Paulo%20SP%20clube%20de%20futebol
+Palmeiras = https://pt.wikipedia.org/wiki/Ficheiro:Sociedade_Esportiva_Palmeiras_logo_(1_red_star).svg
+
+# Democrata GV (Governador Valadares/MG)  busca: https://pt.wikipedia.org/w/index.php?search=Democrata%20GV%20Governador%20Valadares%20MG%20clube%20de%20futebol
+Democrata GV = https://pt.wikipedia.org/wiki/Ficheiro:Esporte_Clube_Democrata_logo.svg
+
+# Portuguesa-RJ (Rio de Janeiro/RJ)  busca: https://pt.wikipedia.org/w/index.php?search=Portuguesa%20RJ%20Rio%20de%20Janeiro%20RJ%20clube%20de%20futebol
+Portuguesa-RJ = https://pt.wikipedia.org/wiki/Ficheiro:Associa%C3%A7%C3%A3o_Atl%C3%A9tica_Portuguesa-RJ.png
+
+# Trem (Macapá/AP)  busca: https://pt.wikipedia.org/w/index.php?search=Trem%20Macap%C3%A1%20AP%20clube%20de%20futebol
+Trem = https://pt.wikipedia.org/wiki/Ficheiro:Trem_Desportivo_Clube_(2022).png
+
+# Operário VG (Várzea Grande/MT)  busca: https://pt.wikipedia.org/w/index.php?search=Oper%C3%A1rio%20VG%20V%C3%A1rzea%20Grande%20MT%20clube%20de%20futebol
+Operário VG = https://pt.wikipedia.org/wiki/Ficheiro:Esporteclubeoperario.png
+
+# Ceilândia (Brasília/DF)  busca: https://pt.wikipedia.org/w/index.php?search=Ceil%C3%A2ndia%20Bras%C3%ADlia%20DF%20clube%20de%20futebol
+Ceilândia = https://pt.wikipedia.org/wiki/Ficheiro:Escudo_ceilandia-removebg-preview.png
